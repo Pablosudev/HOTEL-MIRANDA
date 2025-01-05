@@ -1,0 +1,43 @@
+.data{
+    background-color: #F9F9F9;
+
+
+    &__intro{
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+
+
+        &__page{
+            font-family: "Archivo";
+            font-weight: 700;
+            font-size: 0.81rem;
+            line-height: 1.1rem;
+            letter-spacing: 0.17rem;
+            color: #777777;
+            padding-top: 2.3rem;
+            
+        }
+        &__title{
+            font-family: "Old Standard TT";
+            font-weight: 400;
+            font-size: 3.5rem;
+            line-height: 3.75rem;
+            letter-spacing: -0.07rem;
+            color: #111111;
+            text-align: center;
+            padding-top: 2.2rem;
+        }
+        &__text{
+            font-family: "Archivo";
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            color: #777777;
+            text-align: start;
+            padding-top: 0.5rem;
+            padding-right: 1rem;
+           
+        }
+    }
+    
+}

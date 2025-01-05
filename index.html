@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="IMAGENES/NavBar/1.png" alt="icono menu">
-            <img src="IMAGENES/NavBar/icono Hotel.png" alt="icono Hotel Miranda">
-            <h2> <b>HOTEL</b><br>MIRANDA</h2>
-            <img src="IMAGENES/NavBar/Vector.png" alt="icono Vector">
-            <img src="IMAGENES/NavBar/search.png" alt="icono Search">
+    <header class="header">
+        <nav class="navbar">
+            <img src="IMAGENES/NavBar/1.png" alt="icono menu" class="navbar__menu">
+            <div class="navbar__logo">
+                <div class="navbar__logo__box">
+                    <h2 class="navbar__logo__box__letter">H</h2> 
+                </div>
+                <h2 class="navbar__logo__title"><b>HOTEL</b><br>MIRANDA</h2>
+            </div>
+            <div class="navbar__icon">
+                <img src="IMAGENES/NavBar/Vector.png" alt="icono Vector" class="navbar__icon__vector">
+                <img src="IMAGENES/NavBar/search.png" alt="icono Search" class="navbar__icon__vector">
+            </div>
         </nav>
+        <h2>THE ULTIMATE LUXURY<br>EXPERIENCE</h2>
+        <h2>The Perfect<br>Base For You</h2>
+        <button>TAKE A TOUR</button>
+        <button>LEARN MORE</button>
+        <div>
+            <label for="">Arrival Date</label>
+            <input type="text">
+            <label for="">Le Departure Date</label>
+            <input type="text">   
+        </div>
 
     </header>
 </body>

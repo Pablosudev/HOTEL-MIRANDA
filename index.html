@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -21,15 +26,22 @@
                 <img src="IMAGENES/NavBar/search.png" alt="icono Search" class="navbar__icon__vector">
             </div>
         </nav>
-        <h2>THE ULTIMATE LUXURY<br>EXPERIENCE</h2>
-        <h2>The Perfect<br>Base For You</h2>
-        <button>TAKE A TOUR</button>
-        <button>LEARN MORE</button>
-        <div>
-            <label for="">Arrival Date</label>
-            <input type="text">
-            <label for="">Le Departure Date</label>
-            <input type="text">   
+        <h2 class="header__experience">THE ULTIMATE LUXURY<br>EXPERIENCE</h2>
+        <h2 class="header__text">The Perfect<br>Base For You</h2>
+        <button class="header__take">TAKE A TOUR</button>
+        <button class="header__learn">LEARN MORE</button>
+        <div class="header__check">
+            <label class="header__check__date" >Le Departure Date</label>
+            <div>
+                <img src="IMAGENES/NavBar/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1.png" alt="logo calendar" class="header__check__calendar">
+                <input class="header__check__input" type="text" placeholder="24th march 2025">
+            </div>
+            <label class="header__check__date">Le Departure Date</label>
+            <div>
+                <img src="IMAGENES/NavBar/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1.png" alt="logo calendar" class="header__check__calendar">
+                <input class="header__check__input" type="text" placeholder="30th march 2020">
+            </div>
+            <button class="header__check__button">CHECK AVAILABILITY</button>
         </div>
 
     </header>

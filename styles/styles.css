@@ -158,10 +158,12 @@ body {
 
 .data {
   background-color: #F9F9F9;
+  position: relative;
 }
 .data__intro {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  padding-bottom: 9rem;
 }
 .data__intro__page {
   font-family: "Archivo";
@@ -185,10 +187,106 @@ body {
 .data__intro__text {
   font-family: "Archivo";
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 0.877rem;
   line-height: 1.5rem;
   color: #777777;
   text-align: start;
   padding-top: 0.5rem;
-  padding-right: 1rem;
+}
+.data__intro__button {
+  background-color: #BDAC8D;
+  width: 13.5rem;
+  height: 3.75rem;
+  color: #FFFFFF;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.87rem;
+  line-height: 0.93rem;
+  letter-spacing: 0.17rem;
+  border: transparent;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.data__info {
+  position: absolute;
+  top: 80%;
+  left: 14%;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+.data__info__image {
+  width: 16.8rem;
+  height: 18.75rem;
+}
+.data__info__team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #FFFFFF;
+  margin-bottom: 6rem;
+}
+.data__info__team__title {
+  text-align: center;
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.87rem;
+  line-height: 1.87rem;
+  letter-spacing: -0.05rem;
+  padding-top: 8rem;
+  z-index: 1;
+}
+.data__info__team__text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.87rem;
+  line-height: 1.37rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+.data__info__team__logo {
+  width: 4.25rem;
+  height: 3.1rem;
+  position: absolute;
+  top: 23%;
+  z-index: 1;
+}
+.data__info__team__transparent {
+  position: absolute;
+  top: 20%;
+  right: 0%;
+  width: 9rem;
+  height: 6.6rem;
+}
+.data__info__luxury {
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.data__info__luxury__logo {
+  margin-top: 3.3rem;
+  width: 3.5rem;
+  height: 3.1rem;
+  z-index: 100;
+}
+.data__info__luxury__title {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  letter-spacing: -0.05rem;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 1.94rem;
+}
+.data__info__luxury__text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 1rem;
 }/*# sourceMappingURL=styles.css.map */

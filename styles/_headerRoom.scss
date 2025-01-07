@@ -1,0 +1,27 @@
+.header{
+    background-color: #333333;
+
+    &__title{
+        font-family: "Archivo";
+        font-weight: 700;
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+        letter-spacing: 0.1rem;
+        color: #FFFFFF;
+        padding-top: 4.6rem;
+        padding-left: 1.25rem;
+    }
+    &__section{
+        font-weight: 400;
+        font-size: 3.5rem;
+        letter-spacing: -0.07rem;
+        color: #FFFFFF;
+        font-family: "Old Standard TT";
+        padding-top: 2.5rem;
+        padding-left: 1.25rem;
+    }
+    &__box{
+        display: flex;
+        
+    }
+}

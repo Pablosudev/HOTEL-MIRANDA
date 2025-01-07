@@ -289,4 +289,151 @@ body {
   text-align: center;
   color: #FFFFFF;
   margin-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.rooms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 75rem;
+  position: relative;
+}
+.rooms__page {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.87rem;
+  line-height: 1rem;
+  letter-spacing: 0.17rem;
+  color: #777777;
+}
+.rooms__title {
+  font-family: "Old Standar TT";
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.075rem;
+  text-align: center;
+  padding-bottom: 4rem;
+  padding-top: 1rem;
+}
+.rooms__boxLogo {
+  width: 16rem;
+  height: 2.5rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 52.5%;
+}
+.rooms__image {
+  padding-bottom: 15.4rem;
+}
+.rooms__buttonLeft {
+  width: 2rem;
+  height: 2rem;
+  border: transparent;
+  position: absolute;
+  top: 57%;
+  left: 5%;
+  background-color: #ffffff;
+}
+.rooms__buttonRight {
+  width: 2rem;
+  height: 2rem;
+  background-color: #BDAC8D;
+  border: transparent;
+  position: absolute;
+  top: 57%;
+  right: 5%;
+}
+.rooms__card {
+  width: 21rem;
+  height: 13.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background-color: #ffffff;
+  bottom: 30.5%;
+}
+.rooms__card__title {
+  font-family: "Old Stardard TT";
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.075rem;
+  color: #222222;
+  padding-top: 1.5rem;
+}
+.rooms__card__text {
+  font-family: "Roboto";
+  font-size: 0 0.87rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #777777;
+}
+.rooms__card__price {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.68rem;
+  text-align: center;
+  color: #BEAD8E;
+}
+.rooms__boxVideo {
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.rooms__boxVideo__intro {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.87rem;
+  line-height: 0.95rem;
+  letter-spacing: 0.17rem;
+  text-align: start;
+  color: #BDAC8D;
+  padding-top: 4rem;
+}
+.rooms__boxVideo__title {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.075rem;
+  color: #ffffff;
+  padding-top: 1.5rem;
+}
+.rooms__boxVideo__text {
+  font-family: "Archivo";
+  font-weight: 400;
+  font-size: 0.87rem;
+  line-height: 1.5rem;
+  color: #C2C2C2;
+  padding-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.rooms__boxVideo__buttonPlay {
+  position: absolute;
+  bottom: 8%;
+  left: 45%;
+}
+.rooms__boxVideo__buttonBook {
+  width: 13.5rem;
+  height: 3.7rem;
+  background-color: #BDAC8D;
+  color: #ffffff;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.87rem;
+  line-height: 0.95rem;
+  letter-spacing: 0.175rem;
+  border: transparent;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=styles.css.map */

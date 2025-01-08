@@ -272,6 +272,7 @@ body {
 }
 .footer__call {
   display: flex;
+  margin-bottom: 3rem;
 }
 .footer__call__phone {
   font-family: "Old Standard TT", serif;

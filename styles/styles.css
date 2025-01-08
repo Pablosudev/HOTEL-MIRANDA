@@ -162,6 +162,140 @@ body {
   height: 1.2rem;
 }
 
+.footer {
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+}
+.footer__logo {
+  display: flex;
+  padding-top: 1.06rem;
+}
+.footer__logo__box {
+  box-shadow: 5px 10px 14px 0px rgba(139, 139, 139, 0.2509803922);
+  background-color: #BEAD8E;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.footer__logo__box__letter {
+  font-family: "Archivo", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+}
+.footer__logo__title {
+  font-family: "Archivo", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-left: 1rem;
+  padding-top: 0.2rem;
+}
+.footer__text {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #777777;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.footer__box {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 2rem;
+}
+.footer__box__logo {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.footer__services {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #222222;
+}
+.footer__options {
+  display: flex;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.footer__options__listServices {
+  margin-right: 1rem;
+  list-style-type: none;
+}
+.footer__options__listServices__activity {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 3rem;
+  color: #777777;
+}
+.footer__contact {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #222222;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.footer__call {
+  display: flex;
+}
+.footer__call__phone {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-left: 1rem;
+}
+.footer__call__number {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.87rem;
+  line-height: 1rem;
+  margin-left: 1rem;
+}
+.footer__copyright {
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.03rem;
+  color: #222222;
+}
+.footer__terms {
+  display: flex;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+.footer__terms__use {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.03rem;
+  color: #222222;
+}
+.footer__terms__privacy {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.03rem;
+  color: #222222;
+}
+.footer__back {
+  position: absolute;
+  width: 21rem;
+  top: 0%;
+}
+
 .data {
   background-color: #F9F9F9;
   position: relative;

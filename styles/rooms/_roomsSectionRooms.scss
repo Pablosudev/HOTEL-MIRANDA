@@ -1,0 +1,70 @@
+.rooms{
+    padding-top: 15%;
+    &__card{
+        text-align: center;
+        position: relative;
+        padding-left: 5%;
+        padding-right: 5%;
+        &__img{
+            width: 20.9rem;
+            height: 13.6rem;
+            
+        }
+        &__boxLogo{
+            background-color: $whiteF;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 16rem;
+            height: 2.5rem;
+            position: absolute;
+            bottom:41%;
+            left: 15%;
+        }
+        &__title{
+            font-family: $old;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            letter-spacing: -0.04rem;
+            text-align: center;
+            color: $black2;
+            margin-top: 3rem;
+        }
+        &__text{
+            font-family: $roboto;
+            font-weight: 400;
+            font-size: 0.8rem;
+            line-height: 1.5rem;
+            text-align: center;
+            color: $grey7;
+            margin-top: 1rem;
+        }
+        &__date{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+
+            &__price{
+                font-family: $archivo;
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 1rem;
+                color: $beige;
+                text-align: left;
+                padding-right: 2%;
+               
+            }
+            &__booking{
+                font-family: $archivo;
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 1.1rem;
+                color: $greyBD;
+                padding-left: 2%;
+            }
+        }
+    }
+}

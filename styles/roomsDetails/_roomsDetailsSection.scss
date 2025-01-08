@@ -1,0 +1,201 @@
+.details{
+    padding-left: 5%;
+    padding-right: 5%;
+    &__tipe{
+        font-family: $archivo;
+        font-weight: 700;
+        font-size: 0.87rem;
+        line-height: 0.95rem;
+        letter-spacing: 0.17rem;
+        color: $grey7;
+        margin-top: 2rem;
+    }
+    &__title{
+        font-family: $old;
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        letter-spacing: -0.09rem;
+        color: $black2;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    &__price{
+        display: flex;
+        margin-bottom: 1rem;
+        &__dolar{
+            font-family: $archivo;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 2.6rem;
+            text-align: center;
+            color: $beige;
+        }
+        &__time{
+            font-family: $archivo;
+            font-size: 0.8rem;
+            font-weight: 700;
+            line-height: 2.6rem;
+            text-align: center; 
+            color: $beige;    
+        }
+    }
+    &__rooms{
+        width: 21rem;
+        height: 13.3rem;
+        margin-bottom: 2rem;
+    }
+    &__availability{
+        font-family: $archivo;
+        font-size: 1.1rem;
+        font-weight: 700;
+        line-height: 1.2rem;
+        letter-spacing: -0.03rem;
+        text-align: center;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;        
+        position: relative;
+        
+        &__check{
+            font-family: $archivo;
+            font-size: 0.87rem;
+            font-weight: 700;
+            line-height: 0.95rem;
+            text-align: left;
+            color: $black2;
+            margin-top: 1rem;
+        }
+        &__calendar{
+            padding-left: 1.5rem;
+            padding-right: 4.3rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-top: 1rem;
+            background-color: $whiteF8;
+            border:transparent;
+        }
+        &__logoIn{
+            position: absolute;
+            right: 18%;
+            bottom: 40%;
+        }
+        &__logoOut{
+            position: absolute;
+            right: 18%;
+            top: 23%;
+        }
+        &__button{
+            @include defaultbutton($backgroundColor: $beige);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }       
+    }
+    &__text{
+        font-family: $roboto;
+        font-size: 0.87rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        text-align: left;
+        color: $grey7;
+        margin-bottom: 2rem;
+    }
+    &__amenities{
+        font-family: $old;
+        font-size: 1.87rem;
+        font-weight: 400;
+        line-height: 1.87rem;
+        text-align: left;
+        color: $black2;
+        
+    }
+    &__services{
+        display: flex;
+        margin-top: 1rem;
+        &__list{
+            list-style-type: none;
+            margin-right: 1rem;
+            margin-bottom: 5rem;
+            &__info{
+                font-family: $roboto;
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 1.1rem;
+                text-align: left;
+                &__logo{
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+    &__founder{
+        position: relative;
+        &__ellipse{
+            position: absolute;
+            right: 29%;
+            z-index: 1;
+        }
+        &__check{
+            position: absolute;
+            right: 34%;
+            top:6%;
+            z-index: 2;
+        }
+        &__photo{
+            width: 9.3rem;
+            height: 9.3rem;
+            border-radius: 100%;
+            position: relative;
+            left: 28%;
+        }
+        &__name{
+            font-family: $old;
+            font-size: 1.87rem;
+            font-weight: 400;
+            line-height: 1.87rem;
+            letter-spacing: -0.05rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        &__co{
+            font-family: $archivo;
+            font-size: 0.87rem;
+            font-weight: 700;
+            line-height: 0.95rem;
+            letter-spacing: 0.17rem;
+            text-align: center;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            color: $beige;
+        }
+        &__text{
+            font-family: $archivo;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5rem;
+            text-align: center;
+            color: $grey7;
+            margin-bottom: 2rem;
+        }
+    }
+    &__cancellation{
+        font-family: $old;
+        font-size: 1.87rem;
+        font-weight: 400;
+        line-height: 1.87rem;
+        text-align: left;
+    }
+    &__text{
+        font-family: $roboto;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        text-align: left;
+        color: $grey7;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}

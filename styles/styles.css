@@ -32,6 +32,7 @@ body {
   font-family: "Old Standard TT", serif;
   padding-top: 2.5rem;
   padding-left: 1.25rem;
+  margin-bottom: 1rem;
 }
 .header__box {
   display: flex;
@@ -418,9 +419,7 @@ body {
   padding-top: 1rem;
 }
 .rooms__boxLogo {
-  width: 16rem;
-  height: 2.5rem;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   display: flex;
   justify-content: space-around;
   align-items: center;

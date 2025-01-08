@@ -216,6 +216,7 @@ body {
   font-family: "Old Standard TT", serif;
   padding-top: 2.5rem;
   padding-left: 1.25rem;
+  margin-bottom: 1rem;
 }
 .header__box {
   display: flex;
@@ -339,13 +340,13 @@ body {
 }
 .details__container__logoIn {
   position: absolute;
-  right: 18%;
-  bottom: 40%;
+  right: 15%;
+  bottom: 44%;
 }
 .details__container__logoOut {
   position: absolute;
-  right: 18%;
-  top: 23%;
+  right: 15%;
+  top: 20%;
 }
 .details__container__button {
   padding-top: 1.4rem;
@@ -382,7 +383,7 @@ body {
 }
 .details__services__list {
   list-style-type: none;
-  margin-right: 1rem;
+  margin-right: 0.8rem;
   margin-bottom: 5rem;
 }
 .details__services__list__info {
@@ -406,7 +407,7 @@ body {
 .details__founder__check {
   position: absolute;
   right: 34%;
-  top: 6%;
+  top: 5%;
   z-index: 2;
 }
 .details__founder__photo {

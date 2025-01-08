@@ -8,3 +8,19 @@
     font-family: $archivo;
     color: $whiteF;
 }
+@mixin defaultBoxLog($bottom,$left){
+    display: flex;
+    align-items: center;
+    background-color: $whiteF;
+    max-width: 16rem;
+    padding-left: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    position: absolute;
+    bottom: $bottom;
+    left: $left;
+    &__img{
+        padding-right: 1rem;
+       }
+    
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rooms Details</title>
     <link rel="stylesheet" href="styles/roomsDetails/roomsDetails.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -87,24 +87,16 @@
         <img src="IMAGENES/RoomsDetails/Rectangle 85.png" alt="img line">
         <div class="details__box">
             <!--SWIPER-->
-            <div  class="swiper">
+            <div  class="swiper swiper-details">
                 
                 <div class="swiper-wrapper">
                 
                 <div class="swiper-slide"><img src="IMAGENES/Rooms/descarga (2).jpg" alt="photo room"></div>
                 <div class="swiper-slide"><img src="IMAGENES/Rooms/descarga (3).jpg" alt="photo room"></div>
                 <div class="swiper-slide"><img src="IMAGENES/Rooms/descarga.jpg" alt="photo room"></div>
-                ...
                 </div>
-                
-                <div class="swiper-pagination"></div>
-            
-                
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-            
-                
-                <div class="swiper-scrollbar"></div>
             </div>
             <div class="details__box__boxLogo">
                 <img  class="details__box__boxLogo__img" src="IMAGENES/SectionRooms/8725460_bed_icon 1.png" alt="bed logo">
@@ -189,26 +181,6 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>const swiper = new Swiper('.swiper', {
-       
-        direction: 'horizontal',
-        loop: true,
-      
-       
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      
-       
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      
-        
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });</script>
+    <script src="script/roomsDetails.js"></script>
 </body>
 </html>

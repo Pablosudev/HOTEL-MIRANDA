@@ -1,9 +1,9 @@
 .offers{
     margin-top: 2rem;
-    padding-left: 5%;
-    padding-right: 5%;
     &__cards{
         position: relative;
+        padding-left: 5%;
+        padding-right: 5%;
         &__button{
             @include defaultbutton($backgroundColor: $beige);
             padding-left: 21%;
@@ -22,6 +22,8 @@
             &__offer{
                 display: flex;
                 color: $pink;
+                padding-left: 5%;
+                padding-right: 5%;
                 &__dolar{
                     font-family: $archivo;
                     font-size: 1.87rem;
@@ -112,9 +114,13 @@
     &__popular{
         background-color: $black2;
         padding-top: 2rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-bottom: 4rem;
+        padding-left: 5%;
+        padding-right: 5%;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         &__list{
             font-family: Archivo;
             font-size: 14px;
@@ -137,9 +143,65 @@
             margin-bottom: 2rem;
             text-align: center;
         }
-        &__boxLogo{
-            @include defaultBoxLog($bottom:18%,$left:22%);
+        &__box{
+            &__boxLogo{
+                @include defaultBoxLog($bottom:39%,$left:21%);
+                z-index: 1;
+            }
+            &__container{
+                background-color: $whiteF;
+                padding-top: 1rem;
+
+                &__room{
+                    font-family: $old;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    line-height: 1.5rem;
+                    letter-spacing: -0.045rem;
+                    text-align: center;
+                    color: $black2;
+                    margin-bottom: 1rem;
+                    margin-top: 1rem;
+                    padding-top: 1rem;
+                    
+                }
+                &__text{
+                    font-family: $roboto;
+                    font-size: 0.87rem;
+                    font-weight: 400;
+                    line-height: 1.5rem;
+                    text-align: center;
+                    color: $grey7;
+                }
+                &__price{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 1rem;
+                    padding-bottom: 2rem;
+                    &__pricing{
+                        color: $beige;
+                        font-family: $archivo;
+                        font-size: 1rem;
+                        font-weight: 700;
+                        line-height: 1rem;
+                        text-align: right;
+                        padding-right: 1rem;
+                    }
+                    &__booking{
+                        font-family: $archivo;
+                        font-size: 1rem;
+                        font-weight: 700;
+                        line-height: 1rem;
+                        text-align: right;
+                        color: $greyBD;
+                    }
+                }
+
+            }
         }
+        
+        
     }
+    
     
 }

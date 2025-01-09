@@ -198,4 +198,62 @@
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
+    &__box{
+        margin-top: 1rem;
+        position: relative;
+        &__boxLogo{
+            @include defaultBoxLog($bottom:52%,$left:17%);
+            z-index: 1;
+        }
+        &__container{
+            background-color: $whiteF;
+            padding-top: 1rem;
+
+            &__room{
+                font-family: $old;
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 1.5rem;
+                letter-spacing: -0.045rem;
+                text-align: center;
+                color: $black2;
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+                padding-top: 1rem;
+                
+            }
+            &__text{
+                font-family: $roboto;
+                font-size: 0.87rem;
+                font-weight: 400;
+                line-height: 1.5rem;
+                text-align: center;
+                color: $grey7;
+            }
+            &__price{
+                display: flex;
+                justify-content: center;
+                margin-top: 1rem;
+                padding-bottom: 2rem;
+                &__pricing{
+                    color: $beige;
+                    font-family: $archivo;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    line-height: 1rem;
+                    text-align: right;
+                    padding-right: 1rem;
+                }
+                &__booking{
+                    font-family: $archivo;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    line-height: 1rem;
+                    text-align: right;
+                    color: $greyBD;
+                }
+            }
+
+        }
+    }
 }

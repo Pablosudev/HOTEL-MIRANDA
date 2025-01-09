@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/offers/offers.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <header class="header">
@@ -164,28 +165,46 @@
             </div>
             <button class="offers__cards__button">BOOK NOW</button>
         </article>
-        <article class="offers__popular">
+        <article  class="offers__popular">
             <h4 class="offers__popular__list">POPULAR LIST</h4>
             <h2 class="offers__popular__rooms">Popular Rooms</h2>
             <div class="offers__popular__box">
-                <img src="IMAGENES/Rectangle 69.png" alt="">
-            <div class="offers__popular__boxLogo">
-                <img  class="offers__popular__boxLogo__img" src="IMAGENES/SectionRooms/8725460_bed_icon 1.png" alt="bed logo">
-                <img  class="offers__popular__boxLogo__img" src="IMAGENES/SectionRooms/Vector (1).png" alt="wifi logo"> 
-                <img  class="offers__popular__boxLogo__img" src="IMAGENES/SectionRooms/Group.png" alt="car logo">
-                <img  class="offers__popular__boxLogo__img" src="IMAGENES/SectionRooms/Layer_1.png" alt="snow logo"> 
-                <img  class="offers__popular__boxLogo__img"src="IMAGENES/SectionRooms/Vector (2).png" alt="gym logo"> 
-                <img  class="offers__popular__boxLogo__img"src="IMAGENES/SectionRooms/Vector (3).png" alt="smoke logo"> 
-                <img  class="offers__popular__boxLogo__img"src="IMAGENES/SectionRooms/Vector (4).png" alt="cocktail log"> 
-            </div>
-            <h2 class="offers__popular__box__room">Minimal Duplex Room</h2>
-            <p class="offers__popular__box__text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-            <div class="offers__popular__box__price">
-                <div class="offers__popular__box__price__pricing">
-                    <p class="offers__popular__box__price__pricing__dolar">$345</p>
-                    <p class="offers__popular__box__price__pricing__day">/Night</p>
+                    <!--SWIPER-->
+                    <div  class="swiper">
+                        
+                        <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide"><img src="IMAGENES/Rooms/descarga (2).jpg" alt="photo room"></div>
+                        <div class="swiper-slide"><img src="IMAGENES/Rooms/descarga (3).jpg" alt="photo room"></div>
+                        <div class="swiper-slide"><img src="IMAGENES/Rooms/descarga.jpg" alt="photo room"></div>
+                        ...
+                        </div>
+                        
+                        <div class="swiper-pagination"></div>
+                    
+                        
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                        
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                <div class="offers__popular__box__boxLogo">
+                    <img  class="offers__popular__box__boxLogo__img" src="IMAGENES/SectionRooms/8725460_bed_icon 1.png" alt="bed logo">
+                    <img  class="offers__popular__box__boxLogo__img" src="IMAGENES/SectionRooms/Vector (1).png" alt="wifi logo"> 
+                    <img  class="offers__popular__box__boxLogo__img" src="IMAGENES/SectionRooms/Group.png" alt="car logo">
+                    <img  class="offers__popular__box__boxLogo__img" src="IMAGENES/SectionRooms/Layer_1.png" alt="snow logo"> 
+                    <img  class="offers__popular__box__boxLogo__img"src="IMAGENES/SectionRooms/Vector (2).png" alt="gym logo"> 
+                    <img  class="offers__popular__box__boxLogo__img"src="IMAGENES/SectionRooms/Vector (3).png" alt="smoke logo"> 
+                    <img  class="offers__popular__box__boxLogo__img"src="IMAGENES/SectionRooms/Vector (4).png" alt="cocktail log"> 
                 </div>
-                <p class="offers__popular__box__price__pricing__booking">Booking Now</p>
+                <div class="offers__popular__box__container">
+                    <h2 class="offers__popular__box__container__room">Minimal Duplex Room</h2>
+                    <p class="offers__popular__box__container__text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                    <div class="offers__popular__box__container__price">
+                        <p class="offers__popular__box__container__price__pricing">$345/Night</p>
+                        <p class="offers__popular__box__container__price__booking">Booking Now</p>
+                    </div>
                 </div>
             </div>
         </article>
@@ -253,5 +272,27 @@
             <p class="footer__terms__privacy">Privacy Environmental Policy</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>const swiper = new Swiper('.swiper', {
+       
+        direction: 'horizontal',
+        loop: true,
+      
+       
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+       
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });</script>
 </body>
 </html>

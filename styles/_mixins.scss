@@ -1,8 +1,8 @@
-@mixin defaultbutton($backgroundColor){
+@mixin defaultbutton($backgroundColor,$paddingLeft,$paddingRight){
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: $paddingLeft;
+    padding-right: $paddingRight;
     background-color: $backgroundColor;
     border: transparent;
     font-family: $archivo;
@@ -21,6 +21,20 @@
     left: $left;
     &__img{
         padding-right: 1rem;
-       }
-    
+    }
+}
+@mixin defaultInput($paddingLeft,$paddingRight,$paddingTop,$paddingBottom){
+    padding-left: $paddingLeft;
+    padding-right: $paddingRight;
+    padding-top: $paddingTop;
+    padding-bottom: $paddingBottom;
+    margin-top: 1rem;
+    border: transparent;
+    background-color: $whiteF8;
+    font-family: $roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.1rem;
+    text-align: left;
+    color: $grey7;
 }

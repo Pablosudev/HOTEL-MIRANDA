@@ -1,0 +1,39 @@
+.contact{
+
+    &__cards{
+        padding-left: 10%;
+        padding-right: 5%;
+        padding-top: 15%;
+        padding-bottom: 33%;
+        position: relative;
+        &__container{
+            padding-top: 1rem;
+            display: flex;
+            padding-top: 1rem;
+                &__section{
+                    font-family: $old;
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                    line-height: 1.5rem;
+                    text-align: left;
+                    color: $black2;
+                    padding-left: 1rem;
+                }
+            }
+        &__text{
+            font-family: $roboto;
+            font-size: 0.87rem;
+            font-weight: 400;
+            line-height: 1rem;
+            text-align: left;
+            color: $grey7;
+            padding-left: 3.5rem; 
+        }
+        &__background{
+            position: absolute;
+            top: 16%;
+            right: 7%;
+        }
+    }
+    
+}

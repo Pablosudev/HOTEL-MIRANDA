@@ -22,34 +22,56 @@
         padding-bottom: 4rem;
         padding-top: 1rem;
     }
-    &__boxLogo{
-        background-color: $whiteF;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: absolute;
-        top: 52.5%;
+    &__slider{
+        position:relative;
+        &__boxLogo{
+            display: flex;
+            align-items: center;
+            background-color: $whiteF;
+            max-width: 16rem;
+            padding-left: 6%;
+            padding-right: 37%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            position: absolute;
+            top: -8%;
+            left: 14%;
+            z-index: 1 ;
+            &__logo{
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+    &__img{
+        padding-right: 1rem;
     }
-    &__image{
-        padding-bottom: 15.4rem;
-    }
-    &__buttonLeft{
-        width: 2rem;
-        height: 2rem;
-        border: transparent;
-        position: absolute;
-        top: 57%;
-        left: 5%;
-        background-color: #ffffff;
-    }
-    &__buttonRight{
-        width: 2rem;
-        height: 2rem;
-        background-color: #BDAC8D;
-        border: transparent;
-        position: absolute;
-        top: 57%;
-        right: 5%;
+        }
+        &__image{
+            width: 100%;
+            height: 15.25rem;
+        }
+        .swiper-home{
+            width: 23.43rem;
+            height: 15.25rem;
+            
+            .swiper-button-prev{
+                color: $black2;
+                padding: 1rem;
+                background-color: $whiteF;
+                --swiper-navigation-size: 1rem;
+                &:hover{
+                    background-color: $beige;
+                }
+            }
+            .swiper-button-next{
+                color: $black2;
+                padding: 1rem;
+                background-color: $whiteF;
+                --swiper-navigation-size: 1rem;
+                &:hover{
+                    background-color: $beige;
+                }
+            }
+        }
     }
     &__card{
         width: 21rem;

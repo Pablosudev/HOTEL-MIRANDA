@@ -1,13 +1,40 @@
 .navbar{
-    height: 4.37rem;
     background-color: #FFFFFF;
     display: flex;
+    padding-bottom: 7%;
+    box-shadow: 0px 3px 6px 0px #0000004A;
+
     
     &__menu{
         margin-top: 1.75rem;
         margin-left: 1.25rem;
         height: 0.81rem;
         width: 1.25rem;
+        
+    }
+    &__dropdown{
+        position: absolute;
+        left: 0%;
+        margin-top: 17%;
+        display: none;
+        width: 100%;
+        padding-top: 8%;
+        background-color: $whiteF;
+        
+
+        &__page{
+            display: flex;
+            flex-direction: column;
+            font-family: $archivo;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1rem;
+            text-align: left;
+            color: $black2;
+            text-decoration: none;
+            padding-bottom: 0.5rem;
+            padding-left: 1rem;
+        }
     }
     &__logo{
         position: absolute;

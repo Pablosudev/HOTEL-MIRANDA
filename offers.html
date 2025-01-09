@@ -12,7 +12,13 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <img src="IMAGENES/NavBar/1.png" alt="icono menu" class="navbar__menu">
+            <img id="imgButton" src="IMAGENES/NavBar/1.png" alt="icono menu" class="navbar__menu">
+            <div id="navbarList" class="navbar__dropdown">
+                <a class="navbar__dropdown__page" href="home.html">Home</a>
+                <a class="navbar__dropdown__page" href="about.html">About Us</a>
+                <a class="navbar__dropdown__page" href="rooms.html">Rooms</a>
+                <a class="navbar__dropdown__page" href="contact.html">Contact</a>
+            </div>
             <div class="navbar__logo">
                 <div class="navbar__logo__box">
                     <h2 class="navbar__logo__box__letter">H</h2> 
@@ -170,24 +176,21 @@
             <h2 class="offers__popular__rooms">Popular Rooms</h2>
             <div class="offers__popular__box">
                     <!--SWIPER-->
-                    <div  class="swiper">
+                    <div  class="swiper swiper-facilities">
                         
                         <div class="swiper-wrapper">
-                        
-                        <div class="swiper-slide"><img src="IMAGENES/Rooms/descarga (2).jpg" alt="photo room"></div>
-                        <div class="swiper-slide"><img src="IMAGENES/Rooms/descarga (3).jpg" alt="photo room"></div>
-                        <div class="swiper-slide"><img src="IMAGENES/Rooms/descarga.jpg" alt="photo room"></div>
-                        ...
-                        </div>
-                        
-                        <div class="swiper-pagination"></div>
-                    
-                        
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    
-                        
-                        <div class="swiper-scrollbar"></div>
+                                
+                            <div class="swiper-slide"><img src="IMAGENES/Rooms/AizheRK0tt4cDjSRwSea_large.jpg" alt="photo room"></div>
+                            <div class="swiper-slide"><img src="IMAGENES/Rooms/descarga.jpg" alt="photo room"></div>
+                            ...
+                            </div>
+                                
+                            <div class="swiper-pagination"></div>
+                            
+                                
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>   
                     </div>
                 <div class="offers__popular__box__boxLogo">
                     <img  class="offers__popular__box__boxLogo__img" src="IMAGENES/SectionRooms/8725460_bed_icon 1.png" alt="bed logo">
@@ -274,5 +277,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script/offers.js"></script>
+    <script src="script/navbar.js"></script>
 </body>
 </html>

@@ -11,7 +11,13 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <img src="IMAGENES/NavBar/1.png" alt="icono menu" class="navbar__menu">
+            <img id="imgButton" src="IMAGENES/NavBar/1.png" alt="icono menu" class="navbar__menu">
+            <div id="navbarList" class="navbar__dropdown">
+                <a class="navbar__dropdown__page" href="about.html">About Us</a>
+                <a class="navbar__dropdown__page" href="rooms.html">Rooms</a>
+                <a class="navbar__dropdown__page" href="offers.html">Offers</a>
+                <a class="navbar__dropdown__page" href="contact.html">Contact</a>
+            </div>
             <div class="navbar__logo">
                 <div class="navbar__logo__box">
                     <h2 class="navbar__logo__box__letter">H</h2> 
@@ -182,5 +188,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script/roomsDetails.js"></script>
+    <script src="script/navbar.js"></script>
 </body>
 </html>

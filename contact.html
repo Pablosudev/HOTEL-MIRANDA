@@ -12,7 +12,13 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <img src="IMAGENES/NavBar/1.png" alt="icono menu" class="navbar__menu">
+            <img id="imgButton" src="IMAGENES/NavBar/1.png" alt="icono menu" class="navbar__menu">
+            <div id="navbarList" class="navbar__dropdown">
+                <a class="navbar__dropdown__page" href="home.html">Home</a>
+                <a class="navbar__dropdown__page" href="about.html">About Us</a>
+                <a class="navbar__dropdown__page" href="rooms.html">Rooms</a>
+                <a class="navbar__dropdown__page" href="offers.html">Offers</a>
+            </div>
             <div class="navbar__logo">
                 <div class="navbar__logo__box">
                     <h2 class="navbar__logo__box__letter">H</h2> 
@@ -145,4 +151,5 @@
             <p class="footer__terms__privacy">Privacy Environmental Policy</p>
         </div>
     </footer>
+    <script src="script/navbar.js"></script>
 </body>

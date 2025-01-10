@@ -19,3 +19,9 @@ const swiper = new Swiper('.swiper',{
       el: '.swiper-scrollbar',
     },
   });
+  const buttonsBook = document.querySelectorAll(".offers__cards__button");
+  buttonsBook.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      window.location.href = "roomsDetails.html";
+    });
+  });

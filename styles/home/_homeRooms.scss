@@ -1,19 +1,17 @@
 .rooms{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-top: 75rem;
     position: relative;
     &__page{
-        font-family: "Archivo";
+        font-family: $archivo;
         font-weight: 700;
         font-size: 0.87rem;
         line-height: 1rem;
         letter-spacing: 0.17rem;
-        color: #777777
+        color: $grey7;
+        text-align: center;
     }
     &__title{
-        font-family: "Old Standar TT";
+        font-family: $old;
         font-weight: 400;
         font-size: 3.5rem;
         line-height: 3.75rem;
@@ -24,6 +22,7 @@
     }
     &__slider{
         position:relative;
+        width: 19.9rem;
         &__boxLogo{
             display: flex;
             align-items: center;
@@ -34,25 +33,24 @@
             padding-top: 3%;
             padding-bottom: 3%;
             position: absolute;
-            top: -8%;
-            left: 14%;
+            bottom: 92%;
+            left: 18%;
             z-index: 1 ;
             &__logo{
                 margin-left: 0.5rem;
                 margin-right: 0.5rem;
             }
-    &__img{
-        padding-right: 1rem;
-    }
+            &__img{
+                padding-right: 1rem;
+            }
         }
         &__image{
-            width: 100%;
+            width: 23.9rem;
             height: 15.25rem;
         }
-        .swiper-home{
-            width: 23.43rem;
-            height: 15.25rem;
-            
+        .swiper-food{
+            width: 23.9rem;
+            height: 15.25rem; 
             .swiper-button-prev{
                 color: $black2;
                 padding: 1rem;
@@ -63,27 +61,22 @@
                 }
             }
             .swiper-button-next{
-                color: $black2;
-                padding: 1rem;
-                background-color: $whiteF;
-                --swiper-navigation-size: 1rem;
+                 color: $black2;
+                 padding: 1rem;
+                 background-color: $whiteF;
+                 --swiper-navigation-size: 1rem;
                 &:hover{
-                    background-color: $beige;
+                     background-color: $beige;
                 }
             }
         }
         &__card{
-            width: 21rem;
-            height: 13.4rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             position: absolute;
             background-color: $whiteF;
+            width: 20.9rem;
             top: 88%;
-            left: 5%;
+            left: 7%;
             z-index: 1;
-    
             &__title{
                 font-family: $old;
                 font-weight: 400;
@@ -92,6 +85,7 @@
                 letter-spacing: -0.075rem;
                 color: $black2;
                 padding-top: 1.5rem;
+                text-align: center;
             }
             &__text{
                 font-family: $roboto;

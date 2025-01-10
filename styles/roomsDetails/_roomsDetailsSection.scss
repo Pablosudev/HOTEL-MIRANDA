@@ -89,7 +89,7 @@
             top: 20%;
         }
         &__button{
-            @include defaultbutton($backgroundColor: $beige);
+            @include defaultbutton($backgroundColor: $beige,$paddingLeft:0rem,$paddingRight: 0rem);
             margin-top: 2rem;
             margin-bottom: 2rem;
         }       
@@ -202,8 +202,7 @@
         margin-top: 1rem;
         position: relative;
         &__slider{
-            .swiper-home{
-                width: 23.43rem;
+            .swiper{
                 height: 15.25rem;
                 
                 .swiper-button-prev{

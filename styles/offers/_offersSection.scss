@@ -3,9 +3,9 @@
     &__cards{
         padding-left: 5%;
         padding-right: 5%;
+        position: relative;
         &__button{
-            @include defaultbutton($backgroundColor: $beige);
-            padding-left: 21%;
+            @include defaultbutton($backgroundColor: $beige,$paddingLeft:21%,$paddingRight:23%);
             margin-bottom: 4rem;
         }
         &__room{
@@ -21,6 +21,8 @@
     
             &__offer{
                 display: flex;
+                align-items: center;
+                justify-content: center;
                 color: $pink;
                 padding-left: 5%;
                 padding-right: 5%;
@@ -29,7 +31,7 @@
                     font-size: 1.87rem;
                     font-weight: 700;
                     line-height: 2rem;
-                    text-align: right;
+                    padding-left: 0.2rem;
                 }
                 &__day{
                     font-family: $archivo;
@@ -42,6 +44,8 @@
             }
             &__price{
                 display: flex;
+                align-items: baseline;
+                justify-content: flex-end;
                 color: $beige;
                 text-decoration: line-through;
                 &__dolar{
@@ -104,6 +108,7 @@
                     font-weight: 500;
                     line-height: 1.1rem;
                     text-align: left;
+                    margin-bottom: 1rem;
                     &__logo{
                         margin-right: 0.5rem;
                     }
@@ -144,10 +149,32 @@
             text-align: center;
         }
         &__box{
+            &__slide{
+                width: 20.9rem;
+                height: 13.6rem;
+            }
             .swiper-offers{
                 width: 20.9rem;
-                  height: 13.6rem;
-                  --swiper-navigation-size: 10rem;
+                height: 13.6rem;
+            
+            .swiper-button-prev{
+                color: $black2;
+                padding: 1rem;
+                background-color: $whiteF;
+                --swiper-navigation-size: 1rem;
+                &:hover{
+                    background-color: $beige;
+                }
+            }
+            .swiper-button-next{
+                color: $black2;
+                padding: 1rem;
+                background-color: $whiteF;
+                --swiper-navigation-size: 1rem;
+                &:hover{
+                    background-color: $beige;
+                }
+            }
             }
             &__boxLogo{
                 @include defaultBoxLog($bottom:39%,$left:21%);

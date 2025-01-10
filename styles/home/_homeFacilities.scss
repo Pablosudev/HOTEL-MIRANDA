@@ -1,0 +1,73 @@
+.facilities{
+    background-color:$whiteF;
+    margin-top: 4rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20%;
+    &__title{
+        font-family: $archivo;
+        font-size: 0.87rem;
+        font-weight: 700;
+        line-height: 0.95rem;
+        letter-spacing: 0.17rem;
+        text-align: center;
+        color: $whiteF;
+        padding-top: 2rem;
+        margin-bottom: 1rem;
+        color: $grey7;
+    }
+    &__section{
+        font-family: $old;
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 3.75rem;
+        letter-spacing: -0.075rem;
+        text-align: center;
+        color: $whiteF;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: $black2;
+    }
+    .swiper-facilities {
+        width: 20.9rem;
+        height: 23.1rem;
+        .swiper-pagination-bullet-active{
+          background-color: $beige;
+        }
+      }
+    &__image{
+        background-color: $whiteF;
+        padding-left: 2%;
+        padding-right: 2%;
+        &__hand{
+            padding-top: 4rem;
+            padding-left: 1rem;
+        }
+        &__first{
+            margin-bottom: 2rem;
+            padding-left: 6rem;
+        }
+        &__title{
+            font-family: $old;
+            font-size: 1.87rem;
+            font-weight: 400;
+            line-height: 1.87rem;
+            letter-spacing: -0.05rem;
+            text-align: left;
+            color: $black2;
+            margin-top: 1rem;
+            padding-left: 1rem;
+
+        }
+        &__text{
+            font-family: $archivo;
+            font-size: 0.87rem;
+            font-weight: 400;
+            line-height: 1.5rem;
+            text-align: left;
+            color: $grey7;
+            margin-top: 1rem;
+            padding-bottom: 2rem;
+        }
+    }
+}

@@ -256,6 +256,29 @@
         }
     } 
 }
+.swiper-home{
+    width: 23.43rem;
+    height: 15.25rem;
+    
+    .swiper-button-prev{
+        color: $black2;
+        padding: 1rem;
+        background-color: $whiteF;
+        --swiper-navigation-size: 1rem;
+        &:hover{
+            background-color: $beige;
+        }
+    }
+    .swiper-button-next{
+        color: $black2;
+        padding: 1rem;
+        background-color: $whiteF;
+        --swiper-navigation-size: 1rem;
+        &:hover{
+            background-color: $beige;
+        }
+    }
+}
 
 
 

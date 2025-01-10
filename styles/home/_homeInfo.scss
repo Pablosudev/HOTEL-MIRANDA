@@ -1,0 +1,39 @@
+.info{
+    background-color: $black2;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    &__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+        &__box{
+            display: flex;
+            padding-top: 1rem;
+            &__title{
+                color: $whiteF;
+                font-family: $roboto;
+                font-size: 3.75rem;
+                font-weight: 700;
+                line-height: 5.1rem;
+                text-align: center;
+                
+
+            }
+            &__cross{
+                padding-top: 3.2rem;
+                color: $whiteF;
+            }
+        }
+        &__text{
+            color: $whiteF;
+            padding-top: 1rem;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 21.82px;
+            text-align: center;
+        }
+    }
+}

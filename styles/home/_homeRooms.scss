@@ -72,47 +72,51 @@
                 }
             }
         }
-    }
-    &__card{
-        width: 21rem;
-        height: 13.4rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        background-color: #ffffff;
-        bottom: 30.5%;
+        &__card{
+            width: 21rem;
+            height: 13.4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            background-color: $whiteF;
+            top: 88%;
+            left: 5%;
+            z-index: 1;
+    
+            &__title{
+                font-family: $old;
+                font-weight: 400;
+                font-size: 1.75rem;
+                line-height: 2.25rem;
+                letter-spacing: -0.075rem;
+                color: $black2;
+                padding-top: 1.5rem;
+            }
+            &__text{
+                font-family: $roboto;
+                font-size: 0.0.87rem;
+                font-weight: 400;
+                line-height: 1.5rem;
+                text-align: center;
+                color: $grey7;
+            }
+            &__price{
+                font-family: "Archivo";
+                font-weight: 700;
+                font-size: 2rem;
+                line-height: 2.68rem;
+                text-align: center;
+                color: #BEAD8E;
+            }
+        }
 
-        &__title{
-            font-family: "Old Stardard TT";
-            font-weight: 400;
-            font-size: 1.75rem;
-            line-height: 2.25rem;
-            letter-spacing: -0.075rem;
-            color: #222222;
-            padding-top: 1.5rem;
-        }
-        &__text{
-            font-family: "Roboto";
-            font-size: 0.0.87rem;
-            font-weight: 400;
-            line-height: 1.5rem;
-            text-align: center;
-            color: #777777;
-        }
-        &__price{
-            font-family: "Archivo";
-            font-weight: 700;
-            font-size: 2rem;
-            line-height: 2.68rem;
-            text-align: center;
-            color: #BEAD8E;
-        }
     }
     &__boxVideo{
         background-color: #222222;
         display: flex;
         flex-direction: column;
+        margin-top: 13rem;
         padding-left: 1.2rem;
         padding-right: 1.2rem;
 
@@ -144,11 +148,9 @@
             padding-top: 1.5rem;
             margin-bottom: 2rem;
         }
-        
-        &__buttonPlay{
-            position: absolute;
-            bottom: 8%;
-            left: 45%;
+        &__video{
+            width: 100%;
+            height: 16.8rem;
         }
         &__buttonBook{
             width: 13.5rem;

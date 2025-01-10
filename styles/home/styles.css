@@ -558,18 +558,20 @@ body {
 .rooms__slider .swiper-home .swiper-button-next:hover {
   background-color: #BEAD8E;
 }
-.rooms__card {
+.rooms__slider__card {
   width: 21rem;
   height: 13.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  background-color: #ffffff;
-  bottom: 30.5%;
+  background-color: #FFFFFF;
+  top: 88%;
+  left: 5%;
+  z-index: 1;
 }
-.rooms__card__title {
-  font-family: "Old Stardard TT";
+.rooms__slider__card__title {
+  font-family: "Old Standard TT", serif;
   font-weight: 400;
   font-size: 1.75rem;
   line-height: 2.25rem;
@@ -577,15 +579,15 @@ body {
   color: #222222;
   padding-top: 1.5rem;
 }
-.rooms__card__text {
-  font-family: "Roboto";
+.rooms__slider__card__text {
+  font-family: "Roboto", sans-serif;
   font-size: 0 0.87rem;
   font-weight: 400;
   line-height: 1.5rem;
   text-align: center;
   color: #777777;
 }
-.rooms__card__price {
+.rooms__slider__card__price {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 2rem;
@@ -597,6 +599,7 @@ body {
   background-color: #222222;
   display: flex;
   flex-direction: column;
+  margin-top: 13rem;
   padding-left: 1.2rem;
   padding-right: 1.2rem;
 }
@@ -628,10 +631,9 @@ body {
   padding-top: 1.5rem;
   margin-bottom: 2rem;
 }
-.rooms__boxVideo__buttonPlay {
-  position: absolute;
-  bottom: 8%;
-  left: 45%;
+.rooms__boxVideo__video {
+  width: 100%;
+  height: 16.8rem;
 }
 .rooms__boxVideo__buttonBook {
   width: 13.5rem;
@@ -646,4 +648,205 @@ body {
   border: transparent;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.facilities {
+  background-color: #FFFFFF;
+  margin-top: 4rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 20%;
+}
+.facilities__title {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.87rem;
+  font-weight: 700;
+  line-height: 0.95rem;
+  letter-spacing: 0.17rem;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+  color: #777777;
+}
+.facilities__section {
+  font-family: "Old Standard TT", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 3.75rem;
+  letter-spacing: -0.075rem;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #222222;
+}
+.facilities .swiper-facilities {
+  width: 20.9rem;
+  height: 23.1rem;
+}
+.facilities .swiper-facilities .swiper-pagination-bullet-active {
+  background-color: #BEAD8E;
+}
+.facilities__image {
+  background-color: #FFFFFF;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.facilities__image__hand {
+  padding-top: 4rem;
+  padding-left: 1rem;
+}
+.facilities__image__first {
+  margin-bottom: 2rem;
+  padding-left: 6rem;
+}
+.facilities__image__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 1.87rem;
+  font-weight: 400;
+  line-height: 1.87rem;
+  letter-spacing: -0.05rem;
+  text-align: left;
+  color: #222222;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+.facilities__image__text {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.87rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: left;
+  color: #777777;
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.menu {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.menu__donut {
+  position: absolute;
+  right: 0%;
+}
+.menu__title {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.87rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.17rem;
+  text-align: left;
+  color: #777777;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+.menu__section {
+  font-family: "Old Standard TT", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 3.75rem;
+  letter-spacing: -0.075rem;
+  text-align: left;
+  color: #222222;
+}
+.menu__slider {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.menu__slider .swiper-food {
+  width: 100%;
+  height: 34rem;
+}
+.menu__slider .swiper-food .swiper-button-prev {
+  color: #222222;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  position: absolute;
+  bottom: 0%;
+  --swiper-navigation-size: 1rem;
+}
+.menu__slider .swiper-food .swiper-button-prev:hover {
+  background-color: #BEAD8E;
+}
+.menu__slider .swiper-food .swiper-button-next {
+  color: #222222;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  position: absolute;
+  bottom: 2%;
+  --swiper-navigation-size: 1rem;
+}
+.menu__slider .swiper-food .swiper-button-next:hover {
+  background-color: #BEAD8E;
+}
+.menu__slider__food {
+  display: flex;
+  margin-bottom: 3rem;
+}
+.menu__slider__food__image {
+  height: 7.5rem;
+  width: 7.5rem;
+  margin-right: 1.5rem;
+}
+.menu__slider__food__box {
+  padding-left: 1.5rem;
+}
+.menu__slider__food__box__title {
+  font-family: Old Standard TT;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.7200000286px;
+  text-align: left;
+  color: #222222;
+  padding-top: 0.2rem;
+  padding-bottom: 1rem;
+}
+.menu__slider__food__box__text {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.info {
+  background-color: #222222;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+.info__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.info__section__box {
+  display: flex;
+  padding-top: 1rem;
+}
+.info__section__box__title {
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 5.1rem;
+  text-align: center;
+}
+.info__section__box__cross {
+  padding-top: 3.2rem;
+  color: #FFFFFF;
+}
+.info__section__text {
+  color: #FFFFFF;
+  padding-top: 1rem;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.82px;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

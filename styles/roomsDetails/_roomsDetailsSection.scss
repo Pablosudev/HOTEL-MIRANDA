@@ -201,6 +201,31 @@
     &__box{
         margin-top: 1rem;
         position: relative;
+        &__slider{
+            .swiper-home{
+                width: 23.43rem;
+                height: 15.25rem;
+                
+                .swiper-button-prev{
+                    color: $black2;
+                    padding: 1rem;
+                    background-color: $whiteF;
+                    --swiper-navigation-size: 1rem;
+                    &:hover{
+                        background-color: $beige;
+                    }
+                }
+                .swiper-button-next{
+                    color: $black2;
+                    padding: 1rem;
+                    background-color: $whiteF;
+                    --swiper-navigation-size: 1rem;
+                    &:hover{
+                        background-color: $beige;
+                    }
+                }
+            }            
+        }
         &__boxLogo{
             @include defaultBoxLog($bottom:52%,$left:17%);
             z-index: 1;
@@ -255,29 +280,6 @@
             }
         }
     } 
-}
-.swiper-home{
-    width: 23.43rem;
-    height: 15.25rem;
-    
-    .swiper-button-prev{
-        color: $black2;
-        padding: 1rem;
-        background-color: $whiteF;
-        --swiper-navigation-size: 1rem;
-        &:hover{
-            background-color: $beige;
-        }
-    }
-    .swiper-button-next{
-        color: $black2;
-        padding: 1rem;
-        background-color: $whiteF;
-        --swiper-navigation-size: 1rem;
-        &:hover{
-            background-color: $beige;
-        }
-    }
 }
 
 

@@ -347,40 +347,48 @@ body {
   top: 0%;
 }
 
+.contact {
+  margin-top: 25%;
+}
 .contact__cards {
   padding-left: 10%;
   padding-right: 5%;
-  padding-top: 15%;
   padding-bottom: 33%;
+}
+.contact__cards__box {
   position: relative;
 }
-.contact__cards__container {
-  padding-top: 1rem;
+.contact__cards__box__container {
+  position: absolute;
   display: flex;
-  padding-top: 1rem;
 }
-.contact__cards__container__section {
+.contact__cards__box__container__section {
   font-family: "Old Standard TT", serif;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5rem;
   text-align: left;
   color: #222222;
-  padding-left: 1rem;
+  margin-top: 1rem;
+  padding-left: 3rem;
 }
-.contact__cards__text {
+.contact__cards__box__container__text {
   font-family: "Roboto", sans-serif;
   font-size: 0.87rem;
   font-weight: 400;
   line-height: 1rem;
   text-align: left;
   color: #777777;
-  padding-left: 3.5rem;
+  padding-left: 3rem;
+  padding-top: 1.5rem;
 }
-.contact__cards__background {
-  position: absolute;
-  top: 16%;
-  right: 7%;
+.contact__cards__box__container__image {
+  margin-top: 1rem;
+  width: 2.5rem;
+  height: 2.3rem;
+}
+.contact__cards__box__background {
+  padding-left: 7rem;
 }
 
 .form {

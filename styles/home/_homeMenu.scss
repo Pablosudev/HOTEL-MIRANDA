@@ -25,6 +25,7 @@
         letter-spacing: -0.075rem;
         text-align: left;
         color: $black2;
+        margin-bottom: 2rem;
     }
     &__slider{
         display: flex;
@@ -34,12 +35,12 @@
         .swiper-food{
             width: 100%;
             height: 34rem;
+            margin-bottom: 4rem;
             .swiper-button-prev{
                 color: $black2;
                 padding: 1rem;
                 background-color: $whiteF;
-                position: absolute;
-                bottom: 0%;
+                
                 --swiper-navigation-size: 1rem;
                 &:hover{
                     background-color: $beige;
@@ -49,14 +50,16 @@
                 color: $black2;
                 padding: 1rem;
                 background-color: $whiteF;
-                position: absolute;
-                bottom: 2%;
                 --swiper-navigation-size: 1rem;
                 &:hover{
                     background-color: $beige;
                 }
             }
+            .swiper-pagination-bullet-active{
+                background-color: $beige;
+            }
         }
+
 
         &__food{
             display: flex;
@@ -87,6 +90,16 @@
                     line-height: 24px;
                     text-align: left;
                 }
+            }
+        }
+    }
+    &__restaurant{
+        .swiper-restaurant{
+            width: 100%;
+            height: 20.9rem;
+            margin-bottom: 4rem;
+            .swiper-pagination-bullet-active{
+                background-color: $beige;
             }
         }
     }

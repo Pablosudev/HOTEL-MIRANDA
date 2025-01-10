@@ -750,6 +750,7 @@ body {
   letter-spacing: -0.075rem;
   text-align: left;
   color: #222222;
+  margin-bottom: 2rem;
 }
 .menu__slider {
   display: flex;
@@ -759,13 +760,12 @@ body {
 .menu__slider .swiper-food {
   width: 100%;
   height: 34rem;
+  margin-bottom: 4rem;
 }
 .menu__slider .swiper-food .swiper-button-prev {
   color: #222222;
   padding: 1rem;
   background-color: #FFFFFF;
-  position: absolute;
-  bottom: 0%;
   --swiper-navigation-size: 1rem;
 }
 .menu__slider .swiper-food .swiper-button-prev:hover {
@@ -775,11 +775,12 @@ body {
   color: #222222;
   padding: 1rem;
   background-color: #FFFFFF;
-  position: absolute;
-  bottom: 2%;
   --swiper-navigation-size: 1rem;
 }
 .menu__slider .swiper-food .swiper-button-next:hover {
+  background-color: #BEAD8E;
+}
+.menu__slider .swiper-food .swiper-pagination-bullet-active {
   background-color: #BEAD8E;
 }
 .menu__slider__food {
@@ -811,6 +812,14 @@ body {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+}
+.menu__restaurant .swiper-restaurant {
+  width: 100%;
+  height: 20.9rem;
+  margin-bottom: 4rem;
+}
+.menu__restaurant .swiper-restaurant .swiper-pagination-bullet-active {
+  background-color: #BEAD8E;
 }
 
 .info {

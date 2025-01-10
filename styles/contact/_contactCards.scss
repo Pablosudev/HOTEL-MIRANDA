@@ -1,0 +1,45 @@
+.contact{
+    margin-top: 25%;
+    &__cards{
+        padding-left: 10%;
+        padding-right: 5%;
+        padding-bottom: 33%;
+        
+        &__box{
+            position: relative;
+            &__container{
+                position: absolute;
+                display: flex;
+                &__section{
+                    font-family: $old;
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                    line-height: 1.5rem;
+                    text-align: left;
+                    color: $black2;
+                    margin-top: 1rem;
+                    padding-left: 3rem;
+                }
+                &__text{
+                    font-family: $roboto;
+                    font-size: 0.87rem;
+                    font-weight: 400;
+                    line-height: 1rem;
+                    text-align: left;
+                    color: $grey7;
+                    padding-left: 3rem; 
+                    padding-top: 1.5rem;
+                }
+                &__image{
+                    margin-top: 1rem;
+                    width: 2.5rem;
+                    height: 2.3rem;
+                }
+            }
+            &__background{
+                padding-left: 7rem;
+            }
+        }
+    }
+    
+}

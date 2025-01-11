@@ -351,6 +351,7 @@ body {
 .details {
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 5%;
 }
 .details__tipe {
   font-family: "Archivo", sans-serif;
@@ -563,26 +564,26 @@ body {
   width: 20.9rem;
   height: 13.6rem;
 }
-.details__box__slider .swiper {
+.details__box .swiper {
   height: 15.25rem;
   width: 20.9rem;
 }
-.details__box__slider .swiper .swiper-button-prev {
+.details__box .swiper .swiper-button-prev {
   color: #222222;
   padding: 1rem;
   background-color: #FFFFFF;
   --swiper-navigation-size: 1rem;
 }
-.details__box__slider .swiper .swiper-button-prev:hover {
+.details__box .swiper .swiper-button-prev:hover {
   background-color: #BEAD8E;
 }
-.details__box__slider .swiper .swiper-button-next {
+.details__box .swiper .swiper-button-next {
   color: #222222;
   padding: 1rem;
   background-color: #FFFFFF;
   --swiper-navigation-size: 1rem;
 }
-.details__box__slider .swiper .swiper-button-next:hover {
+.details__box .swiper .swiper-button-next:hover {
   background-color: #BEAD8E;
 }
 .details__box__boxLogo {
@@ -590,61 +591,63 @@ body {
   align-items: center;
   background-color: #FFFFFF;
   max-width: 16rem;
-  padding-left: 4%;
+  padding-left: 6%;
+  padding-right: 37%;
   padding-top: 3%;
   padding-bottom: 3%;
   position: absolute;
-  bottom: 52%;
-  left: 17%;
+  bottom: 38%;
+  left: 12%;
   z-index: 1;
+}
+.details__box__boxLogo__logo {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .details__box__boxLogo__img {
   padding-right: 1rem;
 }
-.details__box__container {
-  background-color: #FFFFFF;
-  padding-top: 1rem;
-}
-.details__box__container__room {
+.details__box__title {
   font-family: "Old Standard TT", serif;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5rem;
-  letter-spacing: -0.045rem;
+  letter-spacing: -0.04rem;
   text-align: center;
   color: #222222;
-  margin-bottom: 1rem;
   margin-top: 1rem;
-  padding-top: 1rem;
 }
-.details__box__container__text {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.87rem;
+.details__box__text {
+  font-family: Roboto;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 24px;
   text-align: center;
   color: #777777;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-.details__box__container__price {
+.details__box__container {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-  padding-bottom: 2rem;
+  margin-bottom: 1rem;
 }
-.details__box__container__price__pricing {
-  color: #BEAD8E;
+.details__box__container__price {
   font-family: "Archivo", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1rem;
   text-align: right;
-  padding-right: 1rem;
+  color: #BEAD8E;
+  margin-right: 0.5rem;
 }
-.details__box__container__price__booking {
-  font-family: "Archivo", sans-serif;
-  font-size: 1rem;
+.details__box__container__booking {
+  font-family: Archivo;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 1rem;
+  line-height: 17.41px;
   text-align: right;
   color: #BDBDBD;
+  margin-left: 0.5rem;
 }/*# sourceMappingURL=roomsDetails.css.map */

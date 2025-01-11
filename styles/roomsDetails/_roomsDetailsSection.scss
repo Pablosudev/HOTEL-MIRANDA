@@ -1,6 +1,7 @@
 .details{
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 5%;
     &__tipe{
         font-family: $archivo;
         font-weight: 700;
@@ -202,88 +203,103 @@
     &__box{
         margin-top: 1rem;
         position: relative;
+       
         &__image{
             width: 20.9rem;
             height: 13.6rem;
         }
-        &__slider{
-            .swiper{
-                height: 15.25rem;
-                width: 20.9rem;
+        .swiper{
+            height: 15.25rem;
+            width: 20.9rem;
                 
-                .swiper-button-prev{
-                    color: $black2;
-                    padding: 1rem;
-                    background-color: $whiteF;
-                    --swiper-navigation-size: 1rem;
-                    &:hover{
-                        background-color: $beige;
-                    }
-                }
-                .swiper-button-next{
-                    color: $black2;
-                    padding: 1rem;
-                    background-color: $whiteF;
-                    --swiper-navigation-size: 1rem;
-                    &:hover{
-                        background-color: $beige;
-                    }
-                }
-            }            
+        .swiper-button-prev{
+            color: $black2;
+            padding: 1rem;
+            background-color: $whiteF;
+            --swiper-navigation-size: 1rem;
+            &:hover{
+                background-color: $beige;
+            }
+            }
+        .swiper-button-next{
+            color: $black2;
+            padding: 1rem;
+            background-color: $whiteF;
+            --swiper-navigation-size: 1rem;
+            &:hover{
+                background-color: $beige;
+            }
         }
+        }            
         &__boxLogo{
-            @include defaultBoxLog($bottom:52%,$left:17%);
-            z-index: 1;
+            display: flex;
+            align-items: center;
+            background-color: $whiteF;
+            max-width: 16rem;
+            padding-left: 6%;
+            padding-right: 37%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            position: absolute;
+            bottom: 38%;
+            left: 12%;
+            z-index: 1 ;
+            &__logo{
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+            &__img{
+                padding-right: 1rem;
+            }
+        }
+        &__title{
+            font-family: $old;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 1.5rem;
+            letter-spacing: -0.04rem;
+            text-align: center;
+            color: $black2;
+            margin-top: 1rem;
+            
+        }
+        &__text{
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            color: $grey7;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            
         }
         &__container{
-            background-color: $whiteF;
-            padding-top: 1rem;
-
-            &__room{
-                font-family: $old;
-                font-size: 1.5rem;
-                font-weight: 400;
-                line-height: 1.5rem;
-                letter-spacing: -0.045rem;
-                text-align: center;
-                color: $black2;
-                margin-bottom: 1rem;
-                margin-top: 1rem;
-                padding-top: 1rem;
-                
-            }
-            &__text{
-                font-family: $roboto;
-                font-size: 0.87rem;
-                font-weight: 400;
-                line-height: 1.5rem;
-                text-align: center;
-                color: $grey7;
-            }
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            margin-bottom: 1rem;  
             &__price{
-                display: flex;
-                justify-content: center;
-                margin-top: 1rem;
-                padding-bottom: 2rem;
-                &__pricing{
-                    color: $beige;
-                    font-family: $archivo;
-                    font-size: 1rem;
-                    font-weight: 700;
-                    line-height: 1rem;
-                    text-align: right;
-                    padding-right: 1rem;
-                }
-                &__booking{
-                    font-family: $archivo;
-                    font-size: 1rem;
-                    font-weight: 700;
-                    line-height: 1rem;
-                    text-align: right;
-                    color: $greyBD;
-                }
+                font-family: $archivo;
+                font-size: 1rem;
+                font-weight: 700;
+                line-height: 1rem;
+                text-align: right;
+                color: $beige;
+                margin-right: 0.5rem;
+            }
+            &__booking{
+                font-family: Archivo;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 17.41px;
+                text-align: right;
+                color: $greyBD;
+                margin-left: 0.5rem;
+
             }
         }
+       
     } 
 }
 

@@ -483,6 +483,7 @@ body {
   font-weight: 500;
   line-height: 1.1rem;
   text-align: left;
+  margin-bottom: 1rem;
 }
 .details__services__list__info__logo {
   margin-right: 0.5rem;
@@ -558,8 +559,13 @@ body {
   margin-top: 1rem;
   position: relative;
 }
+.details__box__image {
+  width: 20.9rem;
+  height: 13.6rem;
+}
 .details__box__slider .swiper {
   height: 15.25rem;
+  width: 20.9rem;
 }
 .details__box__slider .swiper .swiper-button-prev {
   color: #222222;

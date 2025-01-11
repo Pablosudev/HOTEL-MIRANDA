@@ -1,9 +1,14 @@
 .navbar{
-    background-color: #FFFFFF;
+    background-color: $whiteF;
     display: flex;
     padding-bottom: 7%;
     box-shadow: 0px 3px 6px 0px #0000004A;
-
+    @media screen and (min-width: 1000px){
+        max-width: 88.75rem;
+        padding-bottom: 8%;
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
     
     &__menu{
         margin-top: 1.75rem;
@@ -11,6 +16,9 @@
         height: 0.81rem;
         width: 1.25rem;
         
+        @media screen and (min-width: 1000px){
+            display: none;
+        }
     }
     &__dropdown{
         position: absolute;
@@ -20,6 +28,12 @@
         width: 100%;
         padding-top: 1%;
         background-color: $whiteF;
+        @media screen and (min-width:1000px) {
+            display: flex;
+            background-color: transparent;
+            margin-top: 2%;
+            left: 26%;
+        }
         
 
         &__page{
@@ -35,45 +49,96 @@
             padding-bottom: 0.5rem;
             padding-left: 1rem;
             margin-top: 0.6rem;
+            @media screen and (min-width: 1000px) {
+                margin-right: 2rem;
+            }
         }
     }
     &__logo{
         position: absolute;
         left: 17%;
         display: flex;
-        width: 6.87rem;
-        height: 2.25rem;
         padding-top: 1.06rem;
         
+        @media screen and (min-width: 1000px) {
+            left: 6%;
+        }
 
         &__title{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 10px;
+            font-family: $archivo;
+            font-size: 0.6rem;
             font-weight: 500;
             padding-left: 1rem;
             padding-top: .5rem;
+
+            @media screen and (min-width: 1000px) {
+                font-size: 1.6rem;
+                font-weight: 700;
+                line-height: 1.7rem;
+                letter-spacing: 0.16rem;
+                text-align: left;
+            }
+        }
+        &__subtitle{
+            font-family: $archivo;
+            font-size: 0.6rem;
+            font-weight: 400;
+            padding-left: 1rem;
+            padding-top: .5rem;
+            @media screen and (min-width: 1000px) {
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 1.7rem;
+                letter-spacing: 0.16rem;
+                text-align: left;
+            }
         }
         &__box{
             width: 2.25rem;
             height: 2.25rem;
             padding: 0.1rem;
             box-shadow: 5px 10px 14px 0px #8B8B8B40;
+            @media screen and (min-width: 1000px){
+                width: 5rem;
+                height: 5rem;
+            }
             &__letter{
-                font-family: Arial, Helvetica, sans-serif;
-                font-family: 5px;
+                font-family: $archivo;
                 font-weight: 700;
                 text-align: center;
+                @media screen and (min-width: 1000px){
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    line-height: 2.72rem;
+                    margin-top: 1rem;
+                }
             }
         }
     }
     &__icon{
         position: absolute;
         right: 6%;
-        &__vector{
-            margin-top: 1.43rem;
-            margin-left: 1rem;
-            width: 1.2rem;
-            height: 1.2rem;
+        display: flex;
+        &__logo{
+            @media screen and (min-width: 1000px) {
+                width: 3.75rem;
+                height: 3.75rem;
+                margin-top: 1.5rem;
+                margin-right: 2rem;   
+                border: 2px solid #8585854D;
+            }
+            &__vector{
+                margin-top: 1.43rem;
+                margin-left: 1rem;
+                width: 1rem;
+                height: 1.2rem;
+                @media screen and (min-width: 1000px) {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    margin-top: 26%;
+                    margin-bottom: 0%;
+                }
+            }
         }
     }
 

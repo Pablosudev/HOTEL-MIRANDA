@@ -222,7 +222,7 @@ body {
   .navbar {
     max-width: 80rem;
     padding-bottom: 8%;
-    margin-left: 12%;
+    margin-left: 8%;
     margin-top: 2rem;
   }
 }
@@ -822,17 +822,19 @@ body {
   padding-right: 1rem;
 }
 .rooms__slider__image {
+  margin-top: 1rem;
   width: 23.9rem;
   height: 15.25rem;
 }
 .rooms__slider .swiper-food {
   width: 23.39rem;
-  height: 15.25rem;
+  height: 28.6rem;
 }
 .rooms__slider .swiper-food .swiper-button-prev {
   color: #222222;
   padding: 1rem;
   background-color: #FFFFFF;
+  top: var(--swiper-navigation-top-offset, 28%);
   --swiper-navigation-size: 1rem;
 }
 .rooms__slider .swiper-food .swiper-button-prev:hover {
@@ -842,17 +844,23 @@ body {
   color: #222222;
   padding: 1rem;
   background-color: #FFFFFF;
+  top: var(--swiper-navigation-top-offset, 28%);
   --swiper-navigation-size: 1rem;
 }
 .rooms__slider .swiper-food .swiper-button-next:hover {
   background-color: #BEAD8E;
 }
+@media screen and (min-width: 1000px) {
+  .rooms__slider .swiper-food {
+    display: none;
+  }
+}
 .rooms__slider__card {
   position: absolute;
   background-color: #FFFFFF;
   width: 20.9rem;
-  top: 88%;
-  left: 7%;
+  top: 48%;
+  left: 6%;
   z-index: 1;
 }
 .rooms__slider__card__title {
@@ -935,7 +943,14 @@ body {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
+.rooms__sliderDesktop {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .rooms__sliderDesktop {
+    display: block;
+  }
+}
 .facilities {
   background-color: #FFFFFF;
   margin-top: 4rem;

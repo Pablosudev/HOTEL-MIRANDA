@@ -51,16 +51,18 @@
             }
         }
         &__image{
+            margin-top: 1rem;
             width: 23.9rem;
             height: 15.25rem;
         }
         .swiper-food{
             width: 23.39rem;
-            height: 15.25rem; 
+            height: 28.6rem; 
             .swiper-button-prev{
                 color: $black2;
                 padding: 1rem;
                 background-color: $whiteF;
+                top: var(--swiper-navigation-top-offset, 28%);
                 --swiper-navigation-size: 1rem;
                 &:hover{
                     background-color: $beige;
@@ -70,18 +72,22 @@
                  color: $black2;
                  padding: 1rem;
                  background-color: $whiteF;
+                 top: var(--swiper-navigation-top-offset, 28%);
                  --swiper-navigation-size: 1rem;
                 &:hover{
                      background-color: $beige;
                 }
+            }
+            @media screen and (min-width: 1000px) {
+                display: none;
             }
         }
         &__card{
             position: absolute;
             background-color: $whiteF;
             width: 20.9rem;
-            top: 88%;
-            left: 7%;
+            top: 48%;
+            left: 6%;
             z-index: 1;
             &__title{
                 font-family: $old;
@@ -167,4 +173,14 @@
             margin-bottom: 2rem;
         }
     }
+    &__sliderDesktop{
+        display: none;
+        @media screen and (min-width: 1000px) {
+            display: block;
+        }
+        .swiperDesktop{
+            
+        } 
+    }
 }
+

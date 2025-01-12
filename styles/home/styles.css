@@ -767,6 +767,11 @@ body {
   padding-top: 75rem;
   position: relative;
 }
+@media screen and (min-width: 1000px) {
+  .rooms {
+    padding-top: 14%;
+  }
+}
 .rooms__page {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
@@ -789,6 +794,11 @@ body {
 .rooms__slider {
   position: relative;
   width: 19.9rem;
+}
+@media screen and (min-width: 1000px) {
+  .rooms__slider {
+    width: 48rem;
+  }
 }
 .rooms__slider__boxLogo {
   display: flex;

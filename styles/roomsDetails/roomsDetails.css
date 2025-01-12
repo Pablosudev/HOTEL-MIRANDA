@@ -556,8 +556,9 @@ body {
   .header__check__button {
     padding-left: 4%;
     padding-right: 4%;
-    padding-top: 0.2%;
-    padding-bottom: 0.2%;
+    max-height: 3.75rem;
+    margin-top: 1rem;
+    margin-right: 4rem;
   }
 }
 

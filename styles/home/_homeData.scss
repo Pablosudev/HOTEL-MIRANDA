@@ -1,13 +1,23 @@
 .data{
     background-color: #F9F9F9;
     position: relative;
+    @media screen and (min-width: 1000px) {
+        display: flex;
+        justify-content: end;
+        background-color: transparent;
+    }
 
     &__intro{
         padding-left: 1.25rem;
         padding-right: 1.25rem;
         padding-bottom: 9rem;
-        
-        
+        @media screen and (min-width: 1000px) {
+            margin-top: 20%;
+            padding-left: 10%;
+            padding-right: 20%;
+            background-color: $whiteF9;
+            
+        }
         &__page{
             font-family: "Archivo";
             font-weight: 700;
@@ -16,7 +26,10 @@
             letter-spacing: 0.17rem;
             color: #777777;
             padding-top: 2.3rem;
-            
+            @media screen and (min-width: 1000px) {
+                position: absolute;
+                top: 25%;
+            }
         }
         &__title{
             font-family: "Old Standard TT";
@@ -27,6 +40,10 @@
             color: #111111;
             text-align: center;
             padding-top: 2.2rem;
+            @media screen and (min-width: 1000px) {
+                padding-top: 0%;
+                text-align: start;
+            }
         }
         &__text{
             font-family: "Archivo";
@@ -58,91 +75,116 @@
         left: 14%;
         display: flex;
         flex-direction: column;
-        background-color: #FFFFFF;
+        background-color: $whiteF;
+        @media screen and (min-width: 1000px) {
+            position: absolute;
+            top: 20%;
+        }
 
-        &__image{
-            width: 16.8rem;
-            height: 18.75rem;
-        }
-            
-        &__team{ 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            background-color: #FFFFFF;
-            margin-bottom: 6rem;
-            
-            
-            &__title{
-                text-align: center;
-                font-family: "Old Standard TT";
-                font-weight: 400;
-                font-size: 1.87rem;
-                line-height: 1.87rem;
-                letter-spacing: -0.05rem;
-                padding-top: 8rem;
-                z-index: 1;
-                
+        &__box{
+            @media screen and (min-width: 1000px) {
+                display: flex;
+                background-color: transparent;
             }
-            &__text{
-                font-family: "Roboto";
-                font-weight: 400;
-                font-size: 0.87rem;
-                line-height: 1.37rem;
-                text-align: center;
-                padding-top: 1rem;
-            }
-            &__logo{
-                width: 4.25rem;
-                height: 3.1rem;
-                position: absolute;
-                top: 23%;
-                z-index: 1;
-            }
-            &__transparent{
-                position: absolute;
-                top: 20%;
-                right: 0%;
-                width: 9rem;
-                height: 6.6rem;
+            &__luxury{
+                background-color: $black2;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @media screen and (min-width: 1000px) {
+                    height: 18.7rem;
+                    width: 16.8rem;
+                    margin-top: 1.5rem;
+                    margin-left: 1.5rem;
+                }
+
+                &__logo{
+                    margin-top: 3.3rem;
+                    width: 3.5rem;
+                    height: 3.1rem;
+                    z-index: 100;
+                }
+                &__title{
+                    font-family: "Old Standard TT";
+                    font-weight: 400;
+                    font-size: 1.8rem;
+                    line-height: 1.8rem;
+                    letter-spacing: -0.05rem;
+                    text-align: center;
+                    color: #FFFFFF;
+                    margin-top: 1.94rem;
+                }
+                &__text{
+                    font-family: "Roboto";
+                    font-weight: 400;
+                    font-size: 0.8rem;
+                    line-height: 1.3rem;
+                    text-align: center;
+                    color: #FFFFFF;
+                    margin-top: 1rem;
+                    padding-bottom: 3rem;
+                }
             }
         }
+        &__boxTeam{
+            @media screen and (min-width: 1000px) {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+            &__image{
+                width: 16.8rem;
+                height: 18.75rem;
+                @media screen and (min-width: 1000px) {
+                    margin-left: 1.5rem;
+                }
+            }
+            &__team{ 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                background-color: $whiteF;
+                margin-bottom: 6rem;
+                @media screen and (min-width: 1000px) {
+                    width: 16.8rem;
+                    height: 18.75rem;
+                    margin-bottom: 0%;
+                }
     
-        &__luxury{
-            background-color: #222222;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-
-            &__logo{
-                margin-top: 3.3rem;
-                width: 3.5rem;
-                height: 3.1rem;
-                z-index: 100;
-            }
-            &__title{
-                font-family: "Old Standard TT";
-                font-weight: 400;
-                font-size: 1.8rem;
-                line-height: 1.8rem;
-                letter-spacing: -0.05rem;
-                text-align: center;
-                color: #FFFFFF;
-                margin-top: 1.94rem;
-            }
-            &__text{
-                font-family: "Roboto";
-                font-weight: 400;
-                font-size: 0.8rem;
-                line-height: 1.3rem;
-                text-align: center;
-                color: #FFFFFF;
-                margin-top: 1rem;
-                padding-bottom: 3rem;
+                &__title{
+                    text-align: center;
+                    font-family: "Old Standard TT";
+                    font-weight: 400;
+                    font-size: 1.87rem;
+                    line-height: 1.87rem;
+                    letter-spacing: -0.05rem;
+                    padding-top: 8rem;
+                    z-index: 1;
+                    
+                }
+                &__text{
+                    font-family: "Roboto";
+                    font-weight: 400;
+                    font-size: 0.87rem;
+                    line-height: 1.37rem;
+                    text-align: center;
+                    padding-top: 1rem;
+                }
+                &__logo{
+                    width: 4.25rem;
+                    height: 3.1rem;
+                    position: absolute;
+                    top: 23%;
+                    z-index: 1;
+                }
+                &__transparent{
+                    position: absolute;
+                    top: 20%;
+                    right: 0%;
+                    width: 9rem;
+                    height: 6.6rem;
+                }
             }
         }
     }
-    
 }

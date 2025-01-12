@@ -1,6 +1,13 @@
 .header{
     background-color: $black3;
-
+    
+    &__back{
+        display: none;
+        @media screen and (min-width: 1000px) {
+            background-color: $black2;
+            height: 6.25rem;
+        }
+    }
     &__title{
         font-family: $archivo;
         font-weight: 700;
@@ -10,6 +17,15 @@
         color: $whiteF;
         padding-top: 4.6rem;
         padding-left: 1.25rem;
+        @media screen and (min-width: 1000px) {
+            padding-left: 12%;
+            padding-top: 10%;
+            font-size: 0.87rem;
+            font-weight: 700;
+            line-height: 0.95rem;
+            letter-spacing: 0.17rem;
+            text-align: left;
+        }
     }
     &__section{
         font-weight: 400;
@@ -20,6 +36,13 @@
         padding-top: 2.5rem;
         padding-left: 1.25rem;
         margin-bottom: 1rem;
+
+        @media screen and (min-width: 1000px) {
+            padding-left: 12%;
+            font-size: 7.5rem;
+            line-height: 8rem;
+            letter-spacing: -0.2rem;
+        }
     }
     &__box{
         display: flex;
@@ -63,48 +86,77 @@
         @include defaultbutton($backgroundColor: $beige,$paddingLeft: 18%,$paddingRight: 18%);
         margin-left: 1.5rem;
         margin-bottom: 2rem;
+        @media screen and (min-width: 1000px) {
+            padding-left: 3%;
+            padding-right: 3%;
+            margin-left: 12%;
+            margin-bottom: 8%;
+        }
     }
     &__learn{
         @include defaultbutton($backgroundColor: $black3,$paddingLeft: 17%,$paddingRight: 18%);
         margin-left: 1.5rem;
         margin-bottom: 4rem;
         border: 2px solid #FFFFFF54;
+        @media screen and (min-width: 1000px) {
+            padding-left: 3%;
+            padding-right: 3%;
+        }
     }
     &__check{
         background-color: $black2;
         padding-top: 2rem;
         padding-bottom: 2rem;
         padding-left: 2rem ;
-        &__date{
-            font-family: $roboto;
-            font-size: 1rem;
-            font-weight: 700;
-            line-height: 1.17rem;
-            text-align: left;
-            color: $whiteF;
-            padding-bottom: 1rem;   
+        @media screen and (min-width: 1000px) {
+            display: flex;
+            justify-content: space-around;
         }
-        &__calendar{
-            position: relative;
-            &__input{
-                border: transparent;
-                border-bottom: 2px solid $beige;
-                padding-top: 5%;
-                padding-bottom: 5%;
-                padding-left: 10%;
-                padding-right: 5%;
-                margin-bottom: 1rem;
-                background-color: $black2;
-
+        &__box{
+            &__date{
+                font-family: $roboto;
+                font-size: 1rem;
+                font-weight: 700;
+                line-height: 1.17rem;
+                text-align: left;
+                color: $whiteF;
+                padding-bottom: 1rem;
             }
-            &__logo{
-                position: absolute;
-                top: 20%;
+            &__calendar{
+                position: relative;
+                @media screen and (min-width: 1000px) {
+                    margin-top: 1rem;
+                }
+                &__input{
+                    border: transparent;
+                    border-bottom: 2px solid $beige;
+                    padding-top: 5%;
+                    padding-bottom: 5%;
+                    padding-left: 10%;
+                    padding-right: 5%;
+                    margin-bottom: 1rem;
+                    background-color: $black2;
+                    @media screen and (min-width: 1000px) {
+                        padding-left: 15%;
+                    }
+                }
+                &__logo{
+                    position: absolute;
+                    top: 20%;
+                    @media screen and (min-width: 1000px) {
+                        top: 16%;
+                    }
+                }
             }
         }
         &__button{
             @include defaultbutton($backgroundColor: $beige,$paddingLeft: 18%,$paddingRight: 18%);
-        
+            @media screen and (min-width: 1000px) {
+                padding-left: 4%;
+                padding-right: 4%;
+                padding-top: 0.2%;
+                padding-bottom: 0.2%;
+            }
         }
     }
     

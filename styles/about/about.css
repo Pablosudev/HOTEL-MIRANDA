@@ -19,9 +19,9 @@ body {
 }
 @media screen and (min-width: 1000px) {
   .navbar {
-    max-width: 88.75rem;
+    max-width: 80rem;
     padding-bottom: 8%;
-    margin-left: 3rem;
+    margin-left: 12%;
     margin-top: 2rem;
   }
 }
@@ -50,7 +50,7 @@ body {
     display: flex;
     background-color: transparent;
     margin-top: 2%;
-    left: 26%;
+    left: 36%;
   }
 }
 .navbar__dropdown__page {
@@ -80,7 +80,7 @@ body {
 }
 @media screen and (min-width: 1000px) {
   .navbar__logo {
-    left: 6%;
+    left: 15%;
   }
 }
 .navbar__logo__title {
@@ -142,7 +142,7 @@ body {
 }
 .navbar__icon {
   position: absolute;
-  right: 6%;
+  right: 12%;
   display: flex;
 }
 @media screen and (min-width: 1000px) {
@@ -172,6 +172,15 @@ body {
 .header {
   background-color: #333333;
 }
+.header__back {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .header__back {
+    background-color: #222222;
+    height: 6.25rem;
+  }
+}
 .header__title {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
@@ -182,6 +191,17 @@ body {
   padding-top: 4.6rem;
   padding-left: 1.25rem;
 }
+@media screen and (min-width: 1000px) {
+  .header__title {
+    padding-left: 12%;
+    padding-top: 10%;
+    font-size: 0.87rem;
+    font-weight: 700;
+    line-height: 0.95rem;
+    letter-spacing: 0.17rem;
+    text-align: left;
+  }
+}
 .header__section {
   font-weight: 400;
   font-size: 3.5rem;
@@ -191,6 +211,14 @@ body {
   padding-top: 2.5rem;
   padding-left: 1.25rem;
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 1000px) {
+  .header__section {
+    padding-left: 12%;
+    font-size: 7.5rem;
+    line-height: 8rem;
+    letter-spacing: -0.2rem;
+  }
 }
 .header__box {
   display: flex;
@@ -242,6 +270,14 @@ body {
   margin-left: 1.5rem;
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 1000px) {
+  .header__take {
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 12%;
+    margin-bottom: 8%;
+  }
+}
 .header__learn {
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
@@ -255,13 +291,25 @@ body {
   margin-bottom: 4rem;
   border: 2px solid rgba(255, 255, 255, 0.3294117647);
 }
+@media screen and (min-width: 1000px) {
+  .header__learn {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
 .header__check {
   background-color: #222222;
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 2rem;
 }
-.header__check__date {
+@media screen and (min-width: 1000px) {
+  .header__check {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.header__check__box__date {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 700;
@@ -270,10 +318,15 @@ body {
   color: #FFFFFF;
   padding-bottom: 1rem;
 }
-.header__check__calendar {
+.header__check__box__calendar {
   position: relative;
 }
-.header__check__calendar__input {
+@media screen and (min-width: 1000px) {
+  .header__check__box__calendar {
+    margin-top: 1rem;
+  }
+}
+.header__check__box__calendar__input {
   border: transparent;
   border-bottom: 2px solid #BEAD8E;
   padding-top: 5%;
@@ -283,9 +336,19 @@ body {
   margin-bottom: 1rem;
   background-color: #222222;
 }
-.header__check__calendar__logo {
+@media screen and (min-width: 1000px) {
+  .header__check__box__calendar__input {
+    padding-left: 15%;
+  }
+}
+.header__check__box__calendar__logo {
   position: absolute;
   top: 20%;
+}
+@media screen and (min-width: 1000px) {
+  .header__check__box__calendar__logo {
+    top: 16%;
+  }
 }
 .header__check__button {
   padding-top: 1.4rem;
@@ -297,17 +360,48 @@ body {
   font-family: "Archivo", sans-serif;
   color: #FFFFFF;
 }
+@media screen and (min-width: 1000px) {
+  .header__check__button {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+  }
+}
 
 .footer {
   padding-left: 5%;
   padding-right: 5%;
   position: relative;
 }
-.footer__logo {
+@media screen and (min-width: 1000px) {
+  .footer {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer__section {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.footer__section__article {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1000px) {
+  .footer__section__article {
+    max-width: 16.8rem;
+    margin-left: 4rem;
+  }
+}
+.footer__section__article__logo {
   display: flex;
   padding-top: 1.06rem;
+  margin-bottom: 1rem;
 }
-.footer__logo__box {
+.footer__section__article__logo__box {
   box-shadow: 5px 10px 14px 0px rgba(139, 139, 139, 0.2509803922);
   background-color: #BEAD8E;
   padding-top: 3%;
@@ -315,21 +409,21 @@ body {
   padding-left: 3%;
   padding-right: 3%;
 }
-.footer__logo__box__letter {
+.footer__section__article__logo__box__letter {
   font-family: "Archivo", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
   color: #FFFFFF;
 }
-.footer__logo__title {
+.footer__section__article__logo__title {
   font-family: "Archivo", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   padding-left: 1rem;
   padding-top: 0.2rem;
 }
-.footer__text {
+.footer__section__article__text {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -338,39 +432,49 @@ body {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.footer__box {
+.footer__section__article__box {
   display: flex;
   justify-content: start;
   margin-bottom: 2rem;
 }
-.footer__box__logo {
+.footer__section__article__box__logo {
   margin-left: 3%;
   margin-right: 3%;
 }
-.footer__services {
+@media screen and (min-width: 1000px) {
+  .footer__section__article__service {
+    margin-top: 4rem;
+  }
+}
+.footer__section__article__service__title {
   font-family: "Old Standard TT", serif;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.5rem;
   color: #222222;
 }
-.footer__options {
+.footer__section__article__service__options {
   display: flex;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.footer__options__listServices {
+.footer__section__article__service__options__listServices {
   margin-right: 1rem;
   list-style-type: none;
 }
-.footer__options__listServices__activity {
+.footer__section__article__service__options__listServices__activity {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 3rem;
   color: #777777;
 }
-.footer__contact {
+@media screen and (min-width: 1000px) {
+  .footer__section__article__contact {
+    margin-top: 3rem;
+  }
+}
+.footer__section__article__contact__title {
   font-family: "Old Standard TT", serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -379,25 +483,46 @@ body {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
-.footer__call {
+.footer__section__article__contact__call {
   display: flex;
   margin-bottom: 3rem;
 }
-.footer__call__phone {
+.footer__section__article__contact__call__phone {
   font-family: "Old Standard TT", serif;
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.5rem;
   margin-left: 1rem;
 }
-.footer__call__number {
+.footer__section__article__contact__call__number {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 0.87rem;
   line-height: 1rem;
   margin-left: 1rem;
 }
-.footer__copyright {
+.footer__back {
+  position: absolute;
+  width: 21rem;
+  top: 0%;
+}
+@media screen and (min-width: 1000px) {
+  .footer__back {
+    width: 100%;
+    height: 34rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer__info {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f8f8;
+    margin-top: 8rem;
+    align-items: center;
+    width: 100%;
+  }
+}
+.footer__info__copyright {
   margin-top: 2rem;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -406,31 +531,34 @@ body {
   letter-spacing: 0.03rem;
   color: #222222;
 }
-.footer__terms {
+@media screen and (min-width: 1000px) {
+  .footer__info__copyright {
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+  }
+}
+.footer__info__terms {
   display: flex;
   margin-top: 1rem;
   padding-bottom: 1rem;
 }
-.footer__terms__use {
+.footer__info__terms__use {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.1rem;
   letter-spacing: 0.03rem;
   color: #222222;
+  margin-right: 0.5rem;
 }
-.footer__terms__privacy {
+.footer__info__terms__privacy {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.1rem;
   letter-spacing: 0.03rem;
   color: #222222;
-}
-.footer__back {
-  position: absolute;
-  width: 21rem;
-  top: 0%;
+  margin-left: 0.5rem;
 }
 
 .about {

@@ -2,137 +2,188 @@
     padding-left: 5%;
     padding-right: 5%;
     position: relative;
-    &__logo{
-        display: flex;
-        padding-top: 1.06rem;
-        &__box{
-            box-shadow: 5px 10px 14px 0px #8B8B8B40;
-            background-color: $beige;
-            padding-top: 3%;
-            padding-bottom: 2%;
-            padding-left: 3%;
-            padding-right: 3%;
-            &__letter{
-                font-family: $archivo;
-                font-size: 2.5rem;
-                font-weight: 700;
-                text-align: center;
-                color: $whiteF;
+   @media screen and (min-width:1000px) {
+    padding-left: 0%;
+    padding-right: 0%;
+   }
+    &__section{
+        @media screen and (min-width: 1000px){
+            display: flex;
+            justify-content: space-around;
+        }
+        &__article{
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            @media screen and (min-width:1000px) {
+                max-width: 16.8rem;
+                margin-left: 4rem;
             }
-        }
-        &__title{
-            font-family: $archivo;
-            font-size: 1.6rem;
-            font-weight: 700;
-            padding-left: 1rem;
-            padding-top: .2rem  ;
-        }
-    }
-    &__text{
-        font-family: $archivo;
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 1.6rem;
-        color: $grey7;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-    &__box{
-        display: flex;
-        justify-content: start;
-        margin-bottom: 2rem;
-        
-        
-        &__logo{
-            margin-left: 3%;
-            margin-right: 3%;
-        }
-    }
-    &__services{
-        font-family: $old;
-        font-weight: 400;
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-        color: $black2;
-    }
-    &__options{
-        display: flex;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-        &__listServices{
-            margin-right: 1rem ;
-            list-style-type: none;
-            &__activity{
-                font-family: $roboto;
+            &__logo{
+                display: flex;
+                padding-top: 1.06rem;
+                margin-bottom: 1rem;
+                &__box{
+                    box-shadow: 5px 10px 14px 0px #8B8B8B40;
+                    background-color: $beige;
+                    padding-top: 3%;
+                    padding-bottom: 2%;
+                    padding-left: 3%;
+                    padding-right: 3%;
+                    &__letter{
+                        font-family: $archivo;
+                        font-size: 2.5rem;
+                        font-weight: 700;
+                        text-align: center;
+                        color: $whiteF;
+                    }
+                }
+                &__title{
+                    font-family: $archivo;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    padding-left: 1rem;
+                    padding-top: .2rem  ;
+                }
+            }
+            &__text{
+                font-family: $archivo;
                 font-weight: 400;
                 font-size: 1rem;
-                line-height: 3rem;
+                line-height: 1.6rem;
                 color: $grey7;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
             }
-    }
-    }
-    &__contact{
-        font-family: $old;
-        font-weight: 400;
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-        color: $black2;
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
-    }
-    &__call{
-        display: flex;
-        margin-bottom: 3rem;
-        &__phone{
-            font-family: $old;
-            font-weight: 400;
-            font-size: 1.25rem;
-            line-height: 1.5rem;
-            margin-left: 1rem;
-
+            &__box{
+                display: flex;
+                justify-content: start;
+                margin-bottom: 2rem;
+                
+                
+                &__logo{
+                    margin-left: 3%;
+                    margin-right: 3%;
+                }
+            }
+            &__service{
+                @media screen and (min-width: 1000px) {
+                    margin-top: 4rem;
+                }
+                &__title{
+                    font-family: $old;
+                    font-weight: 400;
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
+                    color: $black2;
+                }
+                &__options{
+                    display: flex;
+                    margin-top: 1.5rem;
+                    margin-bottom: 1.5rem;
+                    &__listServices{
+                        margin-right: 1rem ;
+                        list-style-type: none;
+                        &__activity{
+                            font-family: $roboto;
+                            font-weight: 400;
+                            font-size: 1rem;
+                            line-height: 3rem;
+                            color: $grey7;
+                        }
+                    }   
+                }
+            }
+            &__contact{
+                @media screen and (min-width:1000px) {
+                    margin-top: 3rem;
+                }
+                &__title{
+                    font-family: $old;
+                    font-weight: 400;
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
+                    color: $black2;
+                    margin-top: 1rem;
+                    margin-bottom: 1.5rem;
+                }
+                &__call{
+                    display: flex;
+                    margin-bottom: 3rem;
+                    &__phone{
+                        font-family: $old;
+                        font-weight: 400;
+                        font-size: 1.25rem;
+                        line-height: 1.5rem;
+                        margin-left: 1rem;
+            
+                    }
+                    &__number{
+                        font-family: $roboto;
+                        font-weight: 400;
+                        font-size: 0.87rem;
+                        line-height: 1rem;
+                        margin-left: 1rem;
+                    }
+                }
+            }
         }
-        &__number{
-            font-family: $roboto;
-            font-weight: 400;
-            font-size: 0.87rem;
-            line-height: 1rem;
-            margin-left: 1rem;
-        }
-    }
-    &__copyright{
-        margin-top: 2rem;
-        font-family: $roboto;
-        font-weight: 700;
-        font-size: 1rem;
-        line-height: 1.1rem;
-        letter-spacing: 0.03rem;
-        color: $black2;
-    }
-    &__terms{
-        display: flex;
-        margin-top: 1rem;
-        padding-bottom: 1rem;
-        &__use{
-            font-family: $roboto;
-            font-weight: 700;
-            font-size: 1rem;
-            line-height: 1.1rem;
-            letter-spacing: 0.03rem;
-            color: $black2;
-        }
-        &__privacy{
-            font-family: $roboto;
-            font-weight: 700;
-            font-size: 1rem;
-            line-height: 1.1rem;
-            letter-spacing: 0.03rem;
-            color: $black2;
-        }
+           
     }
     &__back{
         position: absolute;
         width: 21rem;
         top: 0%;
+        @media screen and (min-width: 1000px){
+            width: 100%;
+            height: 34rem;
+        }
     }
-
+    &__info{
+        @media screen and (min-width: 1000px) {
+            display: flex;
+            justify-content: space-around;
+            background-color: $whiteF8;
+            margin-top: 8rem;
+            align-items: center;
+            width: 100%;
+        }
+        &__copyright{
+            margin-top: 2rem;
+            font-family: $roboto;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.1rem;
+            letter-spacing: 0.03rem;
+            color: $black2;
+            @media screen and (min-width: 1000px) {
+                padding-bottom: 1rem;
+                margin-top: 1rem;
+            }
+        }
+        &__terms{
+            display: flex;
+            margin-top: 1rem;
+            padding-bottom: 1rem;
+            
+            &__use{
+                font-family: $roboto;
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 1.1rem;
+                letter-spacing: 0.03rem;
+                color: $black2;
+                margin-right: 0.5rem;
+            }
+            &__privacy{
+                font-family: $roboto;
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 1.1rem;
+                letter-spacing: 0.03rem;
+                color: $black2;
+                margin-left: 0.5rem;
+            }
+        }   
+    }
 }
+    

@@ -1,6 +1,9 @@
 import { useState } from "react";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { ButtonStyled, DivStyled, InputStyled} from "./LogInStyle";
+import { FaHotel } from "react-icons/fa6";
+
 
 
 export const LogIn = () => {
@@ -30,17 +33,18 @@ export const LogIn = () => {
     }
 
     return (
-        <div>
-        <h1>LogIn</h1>
-        <form onSubmit={handleSubmit}>
-          <div>
-            <input type="text" placeholder="Email" value={email} onChange={handleChangeEmail}/>
-          </div>
-          <div>
-            <input type="password" placeholder="Contraseña" value={password} onChange={handleChangePassword}/>
-          </div>
-          <button type="submit">Login</button>
-        </form>
-      </div>
+        <DivStyled>
+          <FaHotel/>
+          <h1>HOTEL MIRANDA</h1>
+          <form onSubmit={handleSubmit}>
+            <div>
+              <InputStyled type="text" placeholder="Email" value={email} onChange={handleChangeEmail}/>
+            </div>
+            <div>
+              <InputStyled type="password" placeholder="Contraseña" value={password} onChange={handleChangePassword}/>
+            </div>
+            <ButtonStyled type="submit">Login</ButtonStyled>
+          </form>
+      </DivStyled>
     )
 }

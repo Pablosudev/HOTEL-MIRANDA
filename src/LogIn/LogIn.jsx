@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { ButtonStyled, DivStyled, InputStyled} from "./LogInStyle";
+import { ButtonStyled, CustomIcon, DivStyled, InputStyled} from "./LogInStyle";
 import { FaHotel } from "react-icons/fa6";
 
 
@@ -34,7 +34,7 @@ export const LogIn = () => {
 
     return (
         <DivStyled>
-          <FaHotel/>
+          <CustomIcon/>
           <h1>HOTEL MIRANDA</h1>
           <form onSubmit={handleSubmit}>
             <div>

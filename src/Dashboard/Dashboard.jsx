@@ -1,10 +1,15 @@
+import { Outlet } from "react-router-dom"
+import { DashboardSide } from "./DashboardSide"
+
 
 export const Dashboard = () => {
 
 
     return ( 
-        <div>
-            <h1>DASHBOARD</h1>
-        </div>
+        <>
+        <DashboardSide/>
+        <Outlet/>
+        </>
+    
     )
 }

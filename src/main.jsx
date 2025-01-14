@@ -6,6 +6,7 @@ import { Layout } from './commons/Layout.jsx'
 import { Dashboard } from './Dashboard/Dashboard.jsx'
 import {LogIn} from './LogIn/LogIn.jsx'
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>

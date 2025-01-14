@@ -1,10 +1,18 @@
 import styled from "styled-components";
 import { FaHotel } from "react-icons/fa6";
+import { LuLayoutDashboard } from "react-icons/lu";
+import { MdOutlineVpnKey } from "react-icons/md";
+import { TbCalendarCheck } from "react-icons/tb";
+import { IoPersonOutline } from "react-icons/io5";
+import { HiOutlinePuzzlePiece } from "react-icons/hi2";
+import { FaHeart } from "react-icons/fa";
 
 export const SideStyled = styled.section`
     max-width: 20.9rem;
     padding-left: 3.5rem;
     padding-right:3.5rem;
+    box-shadow: 13px 3px 40px rgba(0, 0, 0, 0.02);
+    display: none;
 `
 export const ContainerLogo = styled.article`
     display: flex;
@@ -15,7 +23,6 @@ export const ContainerLogo = styled.article`
 export const TitleLogo = styled.h2`
     margin-bottom: 0%;
     font-weigth:20rem;
-    
 `
 export const SubtitleLogo = styled.p`
     margin-top: 0.2rem;
@@ -80,3 +87,28 @@ export const CustomIcon = styled(FaHotel)`
     margin-top: 1rem;
     font-size: 3rem;
 ` 
+export const IconDashboard = styled(LuLayoutDashboard)`
+margin-right: 1rem;
+font-size: 1.5rem;
+`
+export const IconBookings = styled(MdOutlineVpnKey)`
+margin-right: 1rem;
+font-size: 1.5rem;
+`
+export const IconRooms = styled(TbCalendarCheck)`
+margin-right: 1rem;
+font-size: 1.5rem;
+`
+export const IconContact = styled(IoPersonOutline)`
+margin-right: 1rem;
+font-size: 1.5rem;
+`
+export const IconUsers = styled(HiOutlinePuzzlePiece)`
+margin-right: 1rem;
+font-size: 1.5rem;
+`
+export const IconHeart = styled(FaHeart)`
+margin-right: 0.5rem;
+margin-left: 0.5rem;
+font-size: 0.7rem;
+`

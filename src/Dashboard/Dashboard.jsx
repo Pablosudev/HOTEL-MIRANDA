@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom"
-import { DashboardNavbar } from "./components/DashboardNavbar"
-import { DashboardSide } from "./components/DashboardSide"
+import { DashboardMenu } from "./components/DashboardMenu"
 
 
 
@@ -10,10 +9,8 @@ export const Dashboard = () => {
 
     return ( 
         <>
-        <DashboardSide/>
-        <DashboardNavbar/>
+        <DashboardMenu/>
         <Outlet/>
         </>
-    
     )
 }

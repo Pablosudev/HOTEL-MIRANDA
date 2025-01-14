@@ -112,3 +112,8 @@ margin-right: 0.5rem;
 margin-left: 0.5rem;
 font-size: 0.7rem;
 `
+export const SectionMenu = styled.section`
+display: flex;
+justify-content: flex-star;
+align-items: flex-start;
+`

@@ -12,7 +12,7 @@ export const SideStyled = styled.section`
     padding-left: 3.5rem;
     padding-right:3.5rem;
     box-shadow: 13px 3px 40px rgba(0, 0, 0, 0.02);
-    display: none;
+    background-color: rgba(255, 255, 255, 1);
 `
 export const ContainerLogo = styled.article`
     display: flex;
@@ -116,4 +116,5 @@ export const SectionMenu = styled.section`
 display: flex;
 justify-content: flex-star;
 align-items: flex-start;
+background-color: rgba(255, 255, 255, 1);
 `

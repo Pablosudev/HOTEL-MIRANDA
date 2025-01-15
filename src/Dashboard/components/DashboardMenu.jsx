@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { LeftIcon, NavbarStyled, RightIcon, TitleNavbar, ContainerPage, MailIcon, BellIcon, MessageIcon} from "./Navbar";
+import { LeftIcon, NavbarStyled, RightIcon, TitleNavbar, ContainerPage, MailIcon, BellIcon, MessageIcon, ContainerIcon} from "./Navbar";
 import { CardContainer, ContainerLogo, ContainerTitle, CustomIcon, EmailUser, FooterText, IconBookings, IconContact, IconDashboard, IconHeart, IconRooms, IconUsers, ImgUser, ListSide, SectionMenu, SideStyled, SubtitleLogo, TitleLogo, TravlStyled, Ulist } from "./Dashboard";
 import { ButtonDefault } from "../../commons/Button";
 
@@ -7,11 +7,13 @@ import { ButtonDefault } from "../../commons/Button";
 export const DashboardMenu = () => {
 
     const [side, setSide] = useState(false);
+    const [arrow,setArrow] = useState(true)
 
     const handleSideMenu = () => {
         setSide(!side);
+        setArrow(!arrow)
     }
-
+    
 
     return(
         <>
@@ -21,7 +23,7 @@ export const DashboardMenu = () => {
                 <CustomIcon/>
                 <ContainerTitle>
                 <TitleLogo>travl</TitleLogo>
-                <SubtitleLogo>Hotel Admin Dasboard</SubtitleLogo>
+                <SubtitleLogo>Hotel Admin Dashboard</SubtitleLogo>
             </ContainerTitle>
             </ContainerLogo>    
                 <article>
@@ -45,15 +47,14 @@ export const DashboardMenu = () => {
                 </SideStyled>
         <NavbarStyled>
             <ContainerPage>
-                <RightIcon onClick={handleSideMenu} />
-                <LeftIcon/>
+                {side ? ( <LeftIcon onClick={handleSideMenu}/>) : (<RightIcon onClick={handleSideMenu} />)}
                 <TitleNavbar>DashBoard</TitleNavbar>
             </ContainerPage>
-            <div>
+            <ContainerIcon>
                 <MailIcon />
                 <BellIcon />
                 <MessageIcon />
-            </div>
+            </ContainerIcon>
         </NavbarStyled>
 
         </SectionMenu>

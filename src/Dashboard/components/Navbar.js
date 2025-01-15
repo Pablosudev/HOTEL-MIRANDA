@@ -12,16 +12,17 @@ export const NavbarStyled = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(255, 255, 255, 1) 0% 0% no-repeat padding-box;
+    background-color: rgba(255, 255, 255, 1);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.02);
 `
 export const ContainerPage = styled.div`
     display:flex;
     align-items: center;
+    
 `
 export const LeftIcon = styled(FaArrowLeft)`
-    font-size: 3.5rem;
-    display: none;
+    font-size: 2.5rem;
+    
 `
 export const RightIcon = styled(FaArrowRight)`
     font-size: 2.5rem;
@@ -45,4 +46,9 @@ export const MessageIcon = styled(MdOutlineMessage)`
     margin-right: 4rem;
     color: rgba(19, 88, 70, 1);
 `
-
+export const ContainerIcon = styled.div`
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.02);
+`

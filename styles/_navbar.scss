@@ -4,10 +4,9 @@
     padding-bottom: 7%;
     box-shadow: 0px 3px 6px 0px #0000004A;
     @media screen and (min-width: 1000px){
-        max-width: 80rem;
+        max-width: 85%;
         padding-bottom: 8%;
         margin-left: 8%;
-        margin-top: 2rem;
     }
     
     &__menu{
@@ -33,6 +32,7 @@
             background-color: transparent;
             margin-top: 2%;
             left: 36%;
+            max-width: 50%;
         }
         
 

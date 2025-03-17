@@ -220,10 +220,9 @@ body {
 }
 @media screen and (min-width: 1000px) {
   .navbar {
-    max-width: 80rem;
+    max-width: 85%;
     padding-bottom: 8%;
     margin-left: 8%;
-    margin-top: 2rem;
   }
 }
 .navbar__menu {
@@ -252,6 +251,7 @@ body {
     background-color: transparent;
     margin-top: 2%;
     left: 36%;
+    max-width: 50%;
   }
 }
 .navbar__dropdown__page {
@@ -797,7 +797,7 @@ body {
 }
 @media screen and (min-width: 1000px) {
   .rooms__slider {
-    width: 48rem;
+    left: 38%;
   }
 }
 .rooms__slider__boxLogo {
@@ -850,11 +850,6 @@ body {
 .rooms__slider .swiper-food .swiper-button-next:hover {
   background-color: #BEAD8E;
 }
-@media screen and (min-width: 1000px) {
-  .rooms__slider .swiper-food {
-    display: none;
-  }
-}
 .rooms__slider__card {
   position: absolute;
   background-color: #FFFFFF;
@@ -897,7 +892,20 @@ body {
   padding-left: 1.2rem;
   padding-right: 1.2rem;
 }
-.rooms__boxVideo__intro {
+@media screen and (min-width: 1000px) {
+  .rooms__boxVideo {
+    position: relative;
+    height: 35rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .rooms__boxVideo__container {
+    width: 30rem;
+    margin-left: 15%;
+    margin-top: 2%;
+  }
+}
+.rooms__boxVideo__container__intro {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 0.87rem;
@@ -907,7 +915,7 @@ body {
   color: #BDAC8D;
   padding-top: 4rem;
 }
-.rooms__boxVideo__title {
+.rooms__boxVideo__container__title {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 3.5rem;
@@ -916,7 +924,7 @@ body {
   color: #ffffff;
   padding-top: 1.5rem;
 }
-.rooms__boxVideo__text {
+.rooms__boxVideo__container__text {
   font-family: "Archivo";
   font-weight: 400;
   font-size: 0.87rem;
@@ -928,6 +936,15 @@ body {
 .rooms__boxVideo__video {
   width: 100%;
   height: 16.8rem;
+}
+@media screen and (min-width: 1000px) {
+  .rooms__boxVideo__video {
+    position: absolute;
+    width: 35.5rem;
+    height: 25rem;
+    right: 12%;
+    top: 13%;
+  }
 }
 .rooms__boxVideo__buttonBook {
   width: 13.5rem;
@@ -943,14 +960,26 @@ body {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.rooms__sliderDesktop {
+@media screen and (min-width: 1000px) {
+  .rooms__boxVideo__buttonBook {
+    position: absolute;
+    left: 16%;
+    bottom: 12%;
+  }
+}
+.rooms__boxVideo__rectangleBrown {
   display: none;
 }
 @media screen and (min-width: 1000px) {
-  .rooms__sliderDesktop {
+  .rooms__boxVideo__rectangleBrown {
     display: block;
+    position: absolute;
+    right: 0%;
+    width: 30rem;
+    height: 35rem;
   }
 }
+
 .facilities {
   background-color: #FFFFFF;
   margin-top: 4rem;
@@ -988,6 +1017,11 @@ body {
 }
 .facilities .swiper-facilities .swiper-pagination-bullet-active {
   background-color: #BEAD8E;
+}
+@media screen and (min-width: 1000px) {
+  .facilities .swiper-facilities {
+    display: none;
+  }
 }
 .facilities__image {
   background-color: #FFFFFF;

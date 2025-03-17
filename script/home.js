@@ -8,7 +8,6 @@ const swiper = new Swiper('.swiper-food', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
   });
 
 

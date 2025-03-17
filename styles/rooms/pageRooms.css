@@ -19,10 +19,9 @@ body {
 }
 @media screen and (min-width: 1000px) {
   .navbar {
-    max-width: 80rem;
+    max-width: 85%;
     padding-bottom: 8%;
     margin-left: 8%;
-    margin-top: 2rem;
   }
 }
 .navbar__menu {
@@ -51,6 +50,7 @@ body {
     background-color: transparent;
     margin-top: 2%;
     left: 36%;
+    max-width: 50%;
   }
 }
 .navbar__dropdown__page {

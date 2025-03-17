@@ -1,9 +1,28 @@
 .menu{
     padding-left: 5%;
     padding-right: 5%;
+    @media screen and (min-width: 1000px) {
+        padding-left: 8%;
+        padding-top: 4%;
+        position: relative;
+    }
     &__donut{
         position: absolute;
         right: 0%;
+        @media screen and (min-width: 1000px) {
+            display: none;
+        }
+    }
+    &__donutDesk{
+        display: none;
+        @media screen and (min-width: 1000px) {
+            display: block;
+            width: 10rem;
+            height: 10rem;
+            position: absolute;
+            left: 6%;
+            top: 1%;
+        }
     }
     &__title{
         font-family: $archivo;
@@ -15,7 +34,9 @@
         color: $grey7;
         padding-top: 8rem;
         padding-bottom: 2rem;
-
+        @media screen and (min-width: 1000px) {
+            padding-left: 10%; 
+        }
     }
     &__section{
         font-family: $old;
@@ -26,11 +47,18 @@
         text-align: left;
         color: $black2;
         margin-bottom: 2rem;
+        @media screen and (min-width: 1000px) {
+            padding-left: 9%; 
+        }
     }
     &__slider{
         display: flex;
         flex-direction: column;
         position: relative;
+        @media screen and (min-width: 1000px) {
+            display: none;
+        }
+        
         
         .swiper-food{
             width: 100%;
@@ -84,13 +112,27 @@
         &__food{
             display: flex;
             margin-bottom: 3rem;
+            @media screen and (min-width: 1000px) {
+                :hover{
+                    background-color: black;
+                    color: white;
+                }
+                
+            }
+            
+            
+           
             &__image{
                 height: 7.5rem; 
                 width: 7.5rem;
                 margin-right: 1.5rem;
+                @media screen and (min-width: 1000px) {
+                    margin: 0%; 
+                }
             }
             &__box{
                 padding-left: 1.5rem;
+               
                 &__title{
                     font-family: Old Standard TT;
                     font-size: 24px;
@@ -98,7 +140,7 @@
                     line-height: 24px;
                     letter-spacing: -0.7200000286102295px;
                     text-align: left;
-                    color: $black2;
+                    // color: $black2;
                     padding-top: 0.2rem;
                     padding-bottom: 1rem;
 
@@ -110,6 +152,7 @@
                     line-height: 24px;
                     text-align: left;
                 }
+             
             }
         }
     }
@@ -120,6 +163,20 @@
             margin-bottom: 4rem;
             .swiper-pagination-bullet-active{
                 background-color: $beige;
+            }
+        }
+    }
+    &__foodDesk{
+        display: none;
+        @media screen and (min-width: 1000px) {
+            display: flex;
+            
+        }
+        &__container{
+            @media screen and (min-width: 1000px) {
+                display: flex;
+                flex-direction: column;
+                margin-right: 5%;
             }
         }
     }

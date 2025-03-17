@@ -27,7 +27,14 @@
         position:relative;
         width: 19.9rem;
         @media screen and (min-width: 1000px) {
-            left: 38%;
+            width: 48rem;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            
+           
         }
         &__boxLogo{
             display: flex;

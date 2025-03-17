@@ -797,7 +797,12 @@ body {
 }
 @media screen and (min-width: 1000px) {
   .rooms__slider {
-    left: 38%;
+    width: 48rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 }
 .rooms__slider__boxLogo {
@@ -987,6 +992,11 @@ body {
   padding-right: 5%;
   padding-bottom: 20%;
 }
+@media screen and (min-width: 1000px) {
+  .facilities {
+    padding-bottom: 0%;
+  }
+}
 .facilities__title {
   font-family: "Archivo", sans-serif;
   font-size: 0.87rem;
@@ -1028,6 +1038,12 @@ body {
   padding-left: 2%;
   padding-right: 2%;
 }
+@media screen and (min-width: 1000px) {
+  .facilities__image {
+    max-width: 23rem;
+    max-height: 21rem;
+  }
+}
 .facilities__image__hand {
   padding-top: 4rem;
   padding-left: 1rem;
@@ -1056,6 +1072,21 @@ body {
   color: #777777;
   margin-top: 1rem;
   padding-bottom: 2rem;
+}
+
+.facilitiesDesktop {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .facilitiesDesktop {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 12%;
+    padding-right: 12%;
+    margin-top: 5%;
+  }
 }
 
 .menu {

@@ -2,7 +2,7 @@
     padding-left: 5%;
     padding-right: 5%;
     @media screen and (min-width: 1000px) {
-        padding-left: 8%;
+        padding-left: 14%;
         padding-top: 4%;
         position: relative;
     }
@@ -35,7 +35,7 @@
         padding-top: 8rem;
         padding-bottom: 2rem;
         @media screen and (min-width: 1000px) {
-            padding-left: 10%; 
+            padding-left: 3%; 
         }
     }
     &__section{
@@ -48,7 +48,7 @@
         color: $black2;
         margin-bottom: 2rem;
         @media screen and (min-width: 1000px) {
-            padding-left: 9%; 
+            padding-left: 2%; 
         }
     }
     &__slider{
@@ -116,12 +116,10 @@
                 :hover{
                     background-color: black;
                     color: white;
+            
                 }
-                
             }
             
-            
-           
             &__image{
                 height: 7.5rem; 
                 width: 7.5rem;
@@ -132,7 +130,12 @@
             }
             &__box{
                 padding-left: 1.5rem;
-               
+                @media screen and (min-width: 1000px) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                }
                 &__title{
                     font-family: Old Standard TT;
                     font-size: 24px;
@@ -161,16 +164,75 @@
             width: 100%;
             height: 20.9rem;
             margin-bottom: 4rem;
+            @media screen and (min-width: 1000px) {
+                width: 23rem;
+            }
             .swiper-pagination-bullet-active{
                 background-color: $beige;
             }
+            .swiper-button-prev{
+                display: none;
+                @media screen and (min-width: 1000px) {
+                    color: $black2;
+                padding: 1rem;
+                padding-top: 2%;
+                background-color: $whiteF8;
+                position: absolute;
+                top: var(--swiper-navigation-top-offset, 0%);
+                width: calc(var(--swiper-navigation-size) / 44* 27);
+                height: var(--swiper-navigation-size);
+                left: auto;
+                right: 4%;
+                z-index: 10;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                --swiper-navigation-size: 1rem;
+                &:hover{
+                    background-color: $beige;
+                }
+                    
+                }
+                
+            }
+            .swiper-button-next{
+                display: none;
+                @media screen and (min-width: 1000px) {
+                color: $black2;
+                padding: 1rem;
+                padding-top: 2%;
+                background-color: $whiteF8;
+                position: absolute;
+                top: var(--swiper-navigation-top-offset, 0%);
+                width: calc(var(--swiper-navigation-size) / 44* 27);
+                height: var(--swiper-navigation-size);
+                z-index: 10;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                --swiper-navigation-size: 1rem;
+
+                &:hover{
+                    background-color: $beige;
+                }
+            }
+            }
         }
+    }
+    &__img{
+        @media screen and (min-width: 1000px) {
+            width: 23rem;
+            height: 23rem;
+        }
+       
     }
     &__foodDesk{
         display: none;
         @media screen and (min-width: 1000px) {
             display: flex;
-            
+            justify-content: center;
         }
         &__container{
             @media screen and (min-width: 1000px) {

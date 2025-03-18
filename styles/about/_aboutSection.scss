@@ -1,238 +1,328 @@
-.about{
-    padding-bottom: 20%;
-    &__intro{
-        padding-top: 10%;
-        padding-left: 5%;
-        padding-right: 5%;
-    &__video{
-        width: 20.9rem;
-        height: 11.6rem;
+.about {
+  padding-bottom: 20%;
+  @media screen and (min-width: 1000px) {
+    padding-right: 15%;
+    padding-left: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__intro {
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    &__video {
+      width: 20.9rem;
+      height: 11.6rem;
+      @media screen and (min-width: 1000px) {
+        width: 73rem;
+        height: 40rem;
+        
+      }
     }
-    &__presentation{
-        font-family: $old;
-        font-size: 2rem;
+    &__presentation {
+      font-family: $old;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 2.47rem;
+      letter-spacing: -0.07rem;
+      text-align: center;
+      color: $black2;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      @media screen and (min-width: 1000px) {
         font-weight: 400;
-        line-height: 2.47rem;
-        letter-spacing: -0.07rem;
+        font-size: 72px;
+        line-height: 100%;
+        letter-spacing: -2.16px;
         text-align: center;
-        color: $black2;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+      }
     }
-    &__content{
+    &__contentDesk{
+      @media screen and (min-width: 1000px) {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         
-        &__box{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-left: 2%;
-            padding-right: 2%;
-            padding-top: 3%;
-            padding-bottom: 3%;
-            margin-bottom: 1rem;
-            &:hover{
-                background-color: $beige;
-                .about__intro__content__box__title { 
-                    color: $whiteF; 
-                }
-                img {
-                    filter: brightness(0) invert(1);
-                }
-            }
-            &__title{
-                font-family: $archivo;
-                font-size: 0.75rem;
-                font-weight: 700;
-                line-height: 0.87rem;
-                letter-spacing: 0.15rem;
-                text-align: center;
-                color: $black2;
-                margin-top: 1rem;
-                
-               
-            }
-        }
+      }
     }
-    }
-    &__restaurant{
-        padding-left: 10%;
-        padding-right: 10%;
-        background-color: $whiteF;
-        box-shadow: 0px 14px 24px 0px #B8B8B81A;
+    &__content {
+      display: flex;
+      justify-content: space-around;
+      
 
-        
-        &__image{
-            width: 18.4rem;
-            height: 14.5rem;
-            margin-top: 6rem;
+      &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin-bottom: 1rem;
+        @media screen and (min-width: 1000px) {
+          width: 12.5rem;
+          height: 12.5rem;
+          justify-content: center;
+          
         }
-        &__section{
-            font-family: $archivo;
-            font-size: 0.87rem;
-            font-weight: 700;
-            line-height: 0.93rem;
-            letter-spacing: 0.1rem;
-            text-align: left;
-            color: $grey7;
-            margin-top: 2rem;
-        }
-        &__info{
-            font-family: Old Standard TT;
-            font-size: 40px;
-            font-weight: 400;
-            line-height: 49.44px;
-            letter-spacing: -1.0499999523162842px;
-            text-align: left;
-            color: $black2;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-        }
-        &__text{
-            font-family: $archivo;
-            font-size: 0.87rem;
-            font-weight: 400;
-            line-height: 1.5rem;
-            text-align: left;
-            color: $grey7;
-        }
-        &__button{
-            @include defaultbutton($backgroundColor: $beige,$paddingLeft: 13%,$paddingRight:13%);
-            box-shadow: 0px 14px 24px 0px #BEAD8E5C;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-        }
-    }
-    &__facilities{
-        background-color: $black2;
-        margin-top: 4rem;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 20%;
-        &__title{
-            font-family: $archivo;
-            font-size: 0.87rem;
-            font-weight: 700;
-            line-height: 0.95rem;
-            letter-spacing: 0.17rem;
-            text-align: center;
+        &:hover {
+          background-color: $beige;
+          .about__intro__content__box__title {
             color: $whiteF;
-            padding-top: 2rem;
-            margin-bottom: 1rem;
-
+          }
+          img {
+            filter: brightness(0) invert(1);
+          }
+         
         }
-        &__section{
-            font-family: $old;
-            font-size: 3.5rem;
-            font-weight: 400;
-            line-height: 3.75rem;
-            letter-spacing: -0.075rem;
-            text-align: left;
-            color: $whiteF;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-
+        &__title {
+          font-family: $archivo;
+          font-size: 0.75rem;
+          font-weight: 700;
+          line-height: 0.87rem;
+          letter-spacing: 0.15rem;
+          text-align: center;
+          color: $black2;
+          margin-top: 1rem;
         }
-        &__image{
-            background-color: $grey29;
-            padding-left: 2%;
-            padding-right: 2%;
-            &__hand{
-                padding-top: 4rem;
-                padding-left: 1rem;
-            }
-            &__first{
-                margin-bottom: 2rem;
-                padding-left: 5rem;
-            }
-            &__title{
-                font-family: $old;
-                font-size: 1.87rem;
-                font-weight: 400;
-                line-height: 1.87rem;
-                letter-spacing: -0.05rem;
-                text-align: left;
-                color: $whiteF;
-                margin-top: 1rem;
-
-            }
-            &__text{
-                font-family: $archivo;
-                font-size: 0.87rem;
-                font-weight: 400;
-                line-height: 1.5rem;
-                text-align: left;
-                color: $whiteF;
-                margin-top: 1rem;
-                padding-bottom: 2rem;
-            }
-        }
-    }
-    &__counter{
-        padding-left: 5%;
-        padding-right: 5%;
-        &__title{
-            font-family: $archivo;
-            font-size: 0.87rem;
-            font-weight: 700;
-            line-height: 0.93rem;
-            letter-spacing: 0.17rem;
-            text-align: left;
-            color: $grey7;
-            padding-top: 4rem;
-            padding-bottom: 2rem;
-        }
-        &__section{
-            font-family: $old;
-            font-size: 3.5rem;
-            font-weight: 400;
-            line-height: 3.75rem;
-            letter-spacing: -0.075rem;
-            text-align: left;
-            color: $black2;
-            padding-bottom: 2rem;
-            &__container{
-                margin-top: 2rem;
-                margin-bottom: 2rem;
-                &__box{
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    &__number{
-                        font-family: $old;
-                        font-size: 3.75rem;
-                        font-weight: 400;
-                        line-height: 3.75rem;
-                        letter-spacing: -0.11rem;
-                        text-align: left;
-                    }
-                }
-                &__users{
-                    font-family: Roboto;
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 16px;
-                    text-align: center;
-                    color: $grey7;
-                }
-            }
-        }
-    }
-    
-}
-.swiper {
-    width: 20.9rem;
-    height: 13.6rem;
-    --swiper-navigation-size: 0rem;
-    .swiper-pagination-bullet-active{
-      background-color: $beige;
-    }
-}
-.swiper-facilities {
-    width: 20.9rem;
-    height: 23.1rem;
-    .swiper-pagination-bullet-active{
-      background-color: $beige;
+      }
     }
   }
+  &__restaurant {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: $whiteF;
+    box-shadow: 0px 14px 24px 0px #b8b8b81a;
+    @media screen and (min-width: 1000px) {
+      display: flex; 
+      padding: 0%;
+      margin-top: 8%;
+      padding-right: 10%;
+    }
+    
+      
+    
+    &__image {
+      width: 18.4rem;
+      height: 14.5rem;
+      margin-top: 6rem;
+      @media screen and (min-width: 1000px) {
+        width: 33rem;
+        height: 26rem;
+        margin:0%;
+      }
+    }
+    &__section {
+      font-family: $archivo;
+      font-size: 0.87rem;
+      font-weight: 700;
+      line-height: 0.93rem;
+      letter-spacing: 0.1rem;
+      text-align: left;
+      color: $grey7;
+      margin-top: 2rem;
+      @media screen and (min-width: 1000px) {
+      margin-left: 2rem;
+
+      }
+    }
+    &__info {
+      font-family: Old Standard TT;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 49.44px;
+      letter-spacing: -1.0499999523162842px;
+      text-align: left;
+      color: $black2;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      @media screen and (min-width: 1000px) {
+        margin-left: 2rem;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: -1.44px;
+        margin-top: 5%;
+        margin-bottom: 2%;
+       }
+    }
+    &__text {
+      font-family: $archivo;
+      font-size: 0.87rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      text-align: left;
+      color: $grey7;
+      @media screen and (min-width: 1000px) {
+        margin-left: 2rem;
+      }
+    }
+    &__button {
+      @include defaultbutton(
+        $backgroundColor: $beige,
+        $paddingLeft: 13%,
+        $paddingRight: 13%
+      );
+      box-shadow: 0px 14px 24px 0px #bead8e5c;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      @media screen and (min-width: 1000px) {
+        margin-left: 2rem;
+      }
+    }
+  }
+  &__facilities {
+    background-color: $black2;
+    margin-top: 4rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20%;
+    
+
+    &__title {
+      font-family: $archivo;
+      font-size: 0.87rem;
+      font-weight: 700;
+      line-height: 0.95rem;
+      letter-spacing: 0.17rem;
+      text-align: center;
+      color: $whiteF;
+      padding-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    &__section {
+      font-family: $old;
+      font-size: 3.5rem;
+      font-weight: 400;
+      line-height: 3.75rem;
+      letter-spacing: -0.075rem;
+      text-align: left;
+      color: $whiteF;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    &__image {
+      background-color: $grey29;
+      padding-left: 2%;
+      padding-right: 2%;
+     
+      
+      
+      &__hand {
+        padding-top: 4rem;
+        padding-left: 1rem;
+      }
+      &__first {
+        margin-bottom: 2rem;
+        padding-left: 5rem;
+      }
+      &__title {
+        font-family: $old;
+        font-size: 1.87rem;
+        font-weight: 400;
+        line-height: 1.87rem;
+        letter-spacing: -0.05rem;
+        text-align: left;
+        color: $whiteF;
+        margin-top: 1rem;
+      }
+      &__text {
+        font-family: $archivo;
+        font-size: 0.87rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        text-align: left;
+        color: $whiteF;
+        margin-top: 1rem;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+  &__counter {
+    padding-left: 5%;
+    padding-right: 5%;
+    &__title {
+      font-family: $archivo;
+      font-size: 0.87rem;
+      font-weight: 700;
+      line-height: 0.93rem;
+      letter-spacing: 0.17rem;
+      text-align: left;
+      color: $grey7;
+      padding-top: 4rem;
+      padding-bottom: 2rem;
+    }
+    &__section {
+      font-family: $old;
+      font-size: 3.5rem;
+      font-weight: 400;
+      line-height: 3.75rem;
+      letter-spacing: -0.075rem;
+      text-align: left;
+      color: $black2;
+      padding-bottom: 2rem;
+      &__container {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        &__box {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          &__number {
+            font-family: $old;
+            font-size: 3.75rem;
+            font-weight: 400;
+            line-height: 3.75rem;
+            letter-spacing: -0.11rem;
+            text-align: left;
+          }
+        }
+        &__users {
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 16px;
+          text-align: center;
+          color: $grey7;
+        }
+      }
+    }
+  }
+  .facilitiesDesktop{
+    display: none;
+    @media screen and (min-width: 1000px) {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        margin-bottom: 4%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    &__container{
+        display: flex;
+        @media screen and (min-width: 1000px) {
+         background-color: #292929;
+        }
+    }
+  }
+}
+.swiper {
+  width: 20.9rem;
+  height: 13.6rem;
+  --swiper-navigation-size: 0rem;
+  .swiper-pagination-bullet-active {
+    background-color: $beige;
+  }
+}
+.swiper-facilities {
+  width: 20.9rem;
+  height: 23.1rem;
+  .swiper-pagination-bullet-active {
+    background-color: $beige;
+  }
+  @media screen and (min-width: 1000px) {
+    display: none !important;
+  }
+}

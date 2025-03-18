@@ -590,6 +590,15 @@ body {
 .about {
   padding-bottom: 20%;
 }
+@media screen and (min-width: 1000px) {
+  .about {
+    padding-right: 15%;
+    padding-left: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .about__intro {
   padding-top: 10%;
   padding-left: 5%;
@@ -598,6 +607,12 @@ body {
 .about__intro__video {
   width: 20.9rem;
   height: 11.6rem;
+}
+@media screen and (min-width: 1000px) {
+  .about__intro__video {
+    width: 73rem;
+    height: 40rem;
+  }
 }
 .about__intro__presentation {
   font-family: "Old Standard TT", serif;
@@ -609,6 +624,21 @@ body {
   color: #222222;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 1000px) {
+  .about__intro__presentation {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 100%;
+    letter-spacing: -2.16px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .about__intro__contentDesk {
+    display: flex;
+    justify-content: center;
+  }
 }
 .about__intro__content {
   display: flex;
@@ -623,6 +653,13 @@ body {
   padding-top: 3%;
   padding-bottom: 3%;
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 1000px) {
+  .about__intro__content__box {
+    width: 12.5rem;
+    height: 12.5rem;
+    justify-content: center;
+  }
 }
 .about__intro__content__box:hover {
   background-color: #BEAD8E;
@@ -649,10 +686,25 @@ body {
   background-color: #FFFFFF;
   box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1019607843);
 }
+@media screen and (min-width: 1000px) {
+  .about__restaurant {
+    display: flex;
+    padding: 0%;
+    margin-top: 8%;
+    padding-right: 10%;
+  }
+}
 .about__restaurant__image {
   width: 18.4rem;
   height: 14.5rem;
   margin-top: 6rem;
+}
+@media screen and (min-width: 1000px) {
+  .about__restaurant__image {
+    width: 33rem;
+    height: 26rem;
+    margin: 0%;
+  }
 }
 .about__restaurant__section {
   font-family: "Archivo", sans-serif;
@@ -663,6 +715,11 @@ body {
   text-align: left;
   color: #777777;
   margin-top: 2rem;
+}
+@media screen and (min-width: 1000px) {
+  .about__restaurant__section {
+    margin-left: 2rem;
+  }
 }
 .about__restaurant__info {
   font-family: Old Standard TT;
@@ -675,6 +732,17 @@ body {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 1000px) {
+  .about__restaurant__info {
+    margin-left: 2rem;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -1.44px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+}
 .about__restaurant__text {
   font-family: "Archivo", sans-serif;
   font-size: 0.87rem;
@@ -682,6 +750,11 @@ body {
   line-height: 1.5rem;
   text-align: left;
   color: #777777;
+}
+@media screen and (min-width: 1000px) {
+  .about__restaurant__text {
+    margin-left: 2rem;
+  }
 }
 .about__restaurant__button {
   padding-top: 1.4rem;
@@ -695,6 +768,11 @@ body {
   box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.3607843137);
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 1000px) {
+  .about__restaurant__button {
+    margin-left: 2rem;
+  }
 }
 .about__facilities {
   background-color: #222222;
@@ -808,6 +886,29 @@ body {
   text-align: center;
   color: #777777;
 }
+.about .facilitiesDesktop {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .about .facilitiesDesktop {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+.about .facilitiesDesktop__container {
+  display: flex;
+}
+@media screen and (min-width: 1000px) {
+  .about .facilitiesDesktop__container {
+    background-color: #292929;
+  }
+}
 
 .swiper {
   width: 20.9rem;
@@ -824,4 +925,9 @@ body {
 }
 .swiper-facilities .swiper-pagination-bullet-active {
   background-color: #BEAD8E;
+}
+@media screen and (min-width: 1000px) {
+  .swiper-facilities {
+    display: none !important;
+  }
 }/*# sourceMappingURL=about.css.map */

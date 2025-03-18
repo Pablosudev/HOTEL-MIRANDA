@@ -1,23 +1,28 @@
 .about {
   padding-bottom: 20%;
   @media screen and (min-width: 1000px) {
-    padding-right: 15%;
-    padding-left: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   &__intro {
     padding-top: 10%;
     padding-left: 5%;
     padding-right: 5%;
+    @media screen and (min-width: 1000px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 20%;
+      padding-right: 20%;
+    }
     &__video {
       width: 20.9rem;
       height: 11.6rem;
       @media screen and (min-width: 1000px) {
         width: 73rem;
         height: 40rem;
-        
       }
     }
     &__presentation {
@@ -97,7 +102,8 @@
       display: flex; 
       padding: 0%;
       margin-top: 8%;
-      padding-right: 10%;
+      padding-right: 17%;
+      padding-left: 17%;
     }
     
       
@@ -177,6 +183,9 @@
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 20%;
+    @media screen and (min-width: 1000px) {
+      width: 100% ;
+    }
     
 
     &__title {
@@ -205,9 +214,11 @@
       background-color: $grey29;
       padding-left: 2%;
       padding-right: 2%;
-     
-      
-      
+      @media screen and (min-width: 1000px) {
+        max-width:27rem;
+        margin-left: 1%;
+      }
+    
       &__hand {
         padding-top: 4rem;
         padding-left: 1rem;
@@ -236,6 +247,7 @@
         margin-top: 1rem;
         padding-bottom: 2rem;
       }
+      
     }
   }
   &__counter {
@@ -297,13 +309,15 @@
         align-items: center;
         margin-top: 5%;
         margin-bottom: 4%;
-        padding-left: 15%;
-        padding-right: 15%;
+       
+        
     }
     &__container{
         display: flex;
+
         @media screen and (min-width: 1000px) {
-         background-color: #292929;
+         margin-bottom: 1%;
+         
         }
     }
   }

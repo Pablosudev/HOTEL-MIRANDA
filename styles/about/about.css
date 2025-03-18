@@ -592,17 +592,25 @@ body {
 }
 @media screen and (min-width: 1000px) {
   .about {
-    padding-right: 15%;
-    padding-left: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 }
 .about__intro {
   padding-top: 10%;
   padding-left: 5%;
   padding-right: 5%;
+}
+@media screen and (min-width: 1000px) {
+  .about__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
 .about__intro__video {
   width: 20.9rem;
@@ -691,7 +699,8 @@ body {
     display: flex;
     padding: 0%;
     margin-top: 8%;
-    padding-right: 10%;
+    padding-right: 17%;
+    padding-left: 17%;
   }
 }
 .about__restaurant__image {
@@ -781,6 +790,11 @@ body {
   padding-right: 5%;
   padding-bottom: 20%;
 }
+@media screen and (min-width: 1000px) {
+  .about__facilities {
+    width: 100%;
+  }
+}
 .about__facilities__title {
   font-family: "Archivo", sans-serif;
   font-size: 0.87rem;
@@ -807,6 +821,12 @@ body {
   background-color: #292929;
   padding-left: 2%;
   padding-right: 2%;
+}
+@media screen and (min-width: 1000px) {
+  .about__facilities__image {
+    max-width: 27rem;
+    margin-left: 1%;
+  }
 }
 .about__facilities__image__hand {
   padding-top: 4rem;
@@ -897,8 +917,6 @@ body {
     align-items: center;
     margin-top: 5%;
     margin-bottom: 4%;
-    padding-left: 15%;
-    padding-right: 15%;
   }
 }
 .about .facilitiesDesktop__container {
@@ -906,7 +924,7 @@ body {
 }
 @media screen and (min-width: 1000px) {
   .about .facilitiesDesktop__container {
-    background-color: #292929;
+    margin-bottom: 1%;
   }
 }
 

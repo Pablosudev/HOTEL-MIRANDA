@@ -1,9 +1,17 @@
 .contact{
     margin-top: 25%;
+    @media screen and (min-width: 1000px) {
+        display: flex;
+        margin-top: 6%;
+        justify-content: center;
+    }
     &__cards{
         padding-left: 10%;
         padding-right: 5%;
         padding-bottom: 33%;
+        @media screen and (min-width: 1000px) {
+            padding-left: 0%;
+         }
         
         &__box{
             position: relative;
@@ -19,6 +27,7 @@
                     color: $black2;
                     margin-top: 1rem;
                     padding-left: 3rem;
+                   
                 }
                 &__text{
                     font-family: $roboto;

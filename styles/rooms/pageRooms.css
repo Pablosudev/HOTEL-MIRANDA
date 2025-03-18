@@ -224,6 +224,11 @@ body {
   display: flex;
   justify-content: end;
 }
+@media screen and (min-width: 1000px) {
+  .header__box {
+    padding-right: 11%;
+  }
+}
 .header__box__home {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
@@ -234,6 +239,13 @@ body {
   padding-left: 5%;
   padding-bottom: 5%;
   padding-top: 4%;
+}
+@media screen and (min-width: 1000px) {
+  .header__box__home {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+  }
 }
 .header__box__line {
   font-family: "Archivo", sans-serif;
@@ -246,6 +258,12 @@ body {
   padding-right: 2%;
   padding-top: 4%;
 }
+@media screen and (min-width: 1000px) {
+  .header__box__line {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+}
 .header__box__page {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
@@ -257,6 +275,13 @@ body {
   padding-right: 5%;
   padding-top: 4%;
   margin-right: 1rem;
+}
+@media screen and (min-width: 1000px) {
+  .header__box__page {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+  }
 }
 .header__take {
   padding-top: 1.4rem;

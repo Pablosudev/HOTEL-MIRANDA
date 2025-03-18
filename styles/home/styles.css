@@ -1350,6 +1350,15 @@ body {
   padding-top: 1rem;
   padding-bottom: 3rem;
 }
+@media screen and (min-width: 1000px) {
+  .info {
+    display: flex;
+    justify-content: space-evenly;
+    width: 79%;
+    margin-left: 12%;
+    margin-bottom: 5%;
+  }
+}
 .info__section {
   display: flex;
   flex-direction: column;

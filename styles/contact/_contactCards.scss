@@ -11,6 +11,7 @@
         padding-bottom: 33%;
         @media screen and (min-width: 1000px) {
             padding-left: 0%;
+            padding-bottom: 8%;
          }
         
         &__box{
@@ -27,7 +28,6 @@
                     color: $black2;
                     margin-top: 1rem;
                     padding-left: 3rem;
-                   
                 }
                 &__text{
                     font-family: $roboto;

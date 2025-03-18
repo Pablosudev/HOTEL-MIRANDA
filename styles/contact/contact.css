@@ -605,6 +605,7 @@ body {
 @media screen and (min-width: 1000px) {
   .contact__cards {
     padding-left: 0%;
+    padding-bottom: 8%;
   }
 }
 .contact__cards__box {
@@ -653,6 +654,12 @@ body {
   height: 12.5rem;
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 1000px) {
+  .form__image {
+    width: 73rem;
+    height: 43rem;
+  }
+}
 .form__input {
   display: flex;
   justify-content: center;
@@ -689,6 +696,23 @@ body {
   text-align: left;
   color: #777777;
 }
+@media screen and (min-width: 1000px) {
+  .form__input__message {
+    padding-left: 25%;
+    padding-right: 64%;
+    padding-top: 5%;
+    padding-bottom: 16%;
+    margin-top: 1rem;
+    border: transparent;
+    background-color: #f8f8f8;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.1rem;
+    text-align: left;
+    color: #777777;
+  }
+}
 .form__input__logo {
   position: absolute;
   right: 130%;
@@ -698,6 +722,11 @@ body {
   position: absolute;
   right: 130%;
   bottom: 77%;
+}
+@media screen and (min-width: 1000px) {
+  .form__input__logoMessage {
+    left: 0%;
+  }
 }
 .form__button {
   padding-top: 1.4rem;
@@ -710,4 +739,41 @@ body {
   color: #FFFFFF;
   margin-bottom: 4rem;
   margin-top: 2rem;
+}
+@media screen and (min-width: 1000px) {
+  .form__button {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #BEAD8E;
+    border: transparent;
+    font-family: "Archivo", sans-serif;
+    color: #FFFFFF;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .form__inputDesk {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .form__inputDesk__container {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+.form__inputDesk__message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media screen and (min-width: 1000px) {
+  .form__inputDesk__message {
+    width: 38rem;
+    max-height: 10rem;
+    position: relative;
+  }
 }/*# sourceMappingURL=contact.css.map */
